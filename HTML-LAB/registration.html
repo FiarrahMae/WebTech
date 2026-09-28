@@ -16,7 +16,7 @@
         <a href="schedule.html">TABLE</a> |
         <a href="registration.html">REGISTRATION</a> 
     </nav>
-
+    <br><br>
         <form action="/action_page.php"></form>
 
         <label for="fname">Fullname:</label><br>
@@ -58,7 +58,7 @@
             required>
         <br><br>
 
-        <label for="bdaymonth">Birthday (dd/mm/yyyy):</label>
+        <label for="bdaymonth">Birthday:</label>
         <input 
         type="date"
         id="bdaymonth"
@@ -73,6 +73,16 @@
         <label for="female">Female</label>
         <br><br>
 
+        <label for="program">Program:</label>
+
+        <select id="program" name="program" required>
+        <option value="">Select a program</option>
+        <option value="BSIT">Bachelor of Science in Information Technology</option>
+        <option value="BSCS">Bachelor of science in Computer Science</option>
+        </select>
+        <br><br>
+
+    
 
         <input type="submit" value="Submit">
 </body>
