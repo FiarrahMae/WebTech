@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Student Portfolio</title>
+</head>
+<body>
+    <nav>
+        <a href="01-basic.html">Part 1</a> |
+        <a href="02-classes-ids.html">Part 2</a> |
+        <a href="03-navigation.html">Part 3</a> |
+        <a href="04-form.html">Part 4</a> |
+        <a href="05-semantic.html">Part 5</a> |
+        <a href="portfolio.html">Portfolio</a>
+    </nav>
+
+    <header>
+        <h1>My Portfolio</h1>
+        <h2>Student Name</h2>
+        <p>A student learning web development and programming.</p>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to My Portfolio</h2>
+            <p>This page showcases my skills and projects.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="images/profile.jpg" alt="My Profile Photo" width="150">
+            <p>I am a student interested in technology, programming, and website development.</p>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Git</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <div class="project-card">
+                <h3>Project 1: Personal Website</h3>
+                <p>A basic website created using HTML.</p>
+                <a href="#projects">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Project 2: Student Registration</h3>
+                <p>A form for collecting student information.</p>
+                <a href="#projects">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Project 3: Navigation Page</h3>
+                <p>A webpage demonstrating navigation links and semantic elements.</p>
+                <a href="#projects">View Project</a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+
+                <label for="contact-email">Email:</label>
+                <input type="email" id="contact-email" name="email" required>
+                <br><br>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                <br><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" cols="30" required></textarea>
+                <br><br>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Your Name</p>
+    </footer>
+</body>
+</html>
