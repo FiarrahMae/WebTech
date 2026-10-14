@@ -1,110 +1,365 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My student portfolio showcasing web development, UI/UX design, and projects.">
     <title>My Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <a href="01-basic.html">Part 1</a> |
-        <a href="02-classes-ids.html">Part 2</a> |
-        <a href="03-navigation.html">Part 3</a> |
-        <a href="04-form.html">Part 4</a> |
-        <a href="05-semantic.html">Part 5</a> |
-        <a href="portfolio.html">Portfolio</a>
+
+    <nav class="top-nav">
+        <a href="#home" class="brand">My<span>Portfolio</span></a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation" aria-expanded="false">
+            ☰
+        </button>
+
+        <div class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
     </nav>
 
-    <header>
-        <h1>My Portfolio</h1>
-        <h2>Student Name</h2>
-        <p>A student learning web development and programming.</p>
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+            <h1>Hello, I'm <span>Fiarrah!</span></h1>
+            <h2>IT Student & Aspiring UI/UX Designer</h2>
+            <p class="hero-description">
+                I enjoy designing beautiful websites and creating digital
+                experiences that are simple, useful, and enjoyable to use.
+                I am continuously learning and improving my web development
+                and design skills.
+            </p>
 
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+            <div class="hero-buttons">
+                <a href="#projects" class="primary-button">Explore My Projects</a>
+                <a href="#contact" class="secondary-button">Contact Me</a>
+            </div>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+            <div class="art-circle circle-one"></div>
+            <div class="art-circle circle-two"></div>
+            <div class="art-card">
+                <div class="art-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="profile-circle">
+            <img src="profile.jpg" alt="My profile picture">
+        </div>
     </header>
 
     <main>
-        <section id="home">
-            <h2>Welcome to My Portfolio</h2>
-            <p>This page showcases my skills and projects.</p>
-        </section>
-
-        <section id="about">
-            <h2>About Me</h2>
-            <img src="images/profile.jpg" alt="My Profile Photo" width="150">
-            <p>I am a student interested in technology, programming, and website development.</p>
-        </section>
-
-        <section id="skills">
-            <h2>My Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>PHP</li>
-                <li>MySQL</li>
-                <li>Git</li>
-            </ul>
-        </section>
-
-        <section id="projects">
-            <h2>My Projects</h2>
-
-            <div class="project-card">
-                <h3>Project 1: Personal Website</h3>
-                <p>A basic website created using HTML.</p>
-                <a href="#projects">View Project</a>
+        <!-- ABOUT -->
+        <section class="section" id="about">
+            <div class="section-heading">
+                <p class="eyebrow">GET TO KNOW ME</p>
+                <h2>About Me</h2>
             </div>
 
-            <div class="project-card">
-                <h3>Project 2: Student Registration</h3>
-                <p>A form for collecting student information.</p>
-                <a href="#projects">View Project</a>
-            </div>
-
-            <div class="project-card">
-                <h3>Project 3: Navigation Page</h3>
-                <p>A webpage demonstrating navigation links and semantic elements.</p>
-                <a href="#projects">View Project</a>
+            <div class="about-content">
+                <div class="about-mark">F.</div>
+                <div class="about-text">
+                    <h3>A student who loves designing websites.</h3>
+                    <p>
+                        I am an Information Technology student interested in
+                        website development, UI/UX design, and creative
+                        problem-solving. I enjoy planning website layouts,
+                        choosing colors, and organizing navigation to make
+                        websites look attractive and easy to use.
+                    </p>
+                    <p>
+                        Through my projects, I continue to develop my technical
+                        skills and learn how design and functionality work
+                        together to create a better user experience.
+                    </p>
+                </div>
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
+        <!-- SKILLS -->
+        <section class="section" id="skills">
+            <div class="section-heading">
+                <p class="eyebrow">WHAT I CAN DO</p>
+                <h2>My Skills</h2>
+                <p class="section-intro">
+                    Skills I am developing through my studies and projects.
+                </p>
+            </div>
 
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <br><br>
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <div class="skill-icon">01</div>
+                    <h3>HTML & CSS</h3>
+                    <p>
+                        Creating structured webpages and styling them with
+                        attractive layouts, colors, and responsive designs.
+                    </p>
+                </article>
 
-                <label for="contact-email">Email:</label>
-                <input type="email" id="contact-email" name="email" required>
-                <br><br>
+                <article class="skill-card">
+                    <div class="skill-icon">02</div>
+                    <h3>JavaScript</h3>
+                    <p>
+                        Adding interactive features and improving how users
+                        navigate and interact with websites.
+                    </p>
+                </article>
 
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" required>
-                <br><br>
+                <article class="skill-card">
+                    <div class="skill-icon">03</div>
+                    <h3>UI/UX Design</h3>
+                    <p>
+                        Designing user-friendly interfaces, organizing content,
+                        and creating layouts with a consistent visual style.
+                    </p>
+                </article>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" cols="30" required></textarea>
-                <br><br>
+                <article class="skill-card">
+                    <div class="skill-icon">04</div>
+                    <h3>PHP & MySQL</h3>
+                    <p>
+                        Learning server-side development and database
+                        management for functional web applications.
+                    </p>
+                </article>
 
-                <input type="submit" value="Send Message">
-            </form>
+                <article class="skill-card">
+                    <div class="skill-icon">05</div>
+                    <h3>Website Routing</h3>
+                    <p>
+                        Organizing page links and navigation paths so users
+                        can move through a website clearly and easily.
+                    </p>
+                </article>
+
+                <article class="skill-card">
+                    <div class="skill-icon">06</div>
+                    <h3>Creative Design</h3>
+                    <p>
+                        Exploring colors, typography, spacing, and visual
+                        details to make websites attractive and consistent.
+                    </p>
+                </article>
+            </div>
         </section>
+
+        <!-- PROJECTS -->
+        <section class="section" id="projects">
+            <div class="section-heading">
+                <p class="eyebrow">MY RECENT WORK</p>
+                <h2>My Projects</h2>
+                <p class="section-intro">
+                    Projects where I combine design, creativity, and technology.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-art farm-art">
+                        <span class="project-number">PROJECT 01</span>
+                        <div class="farm-illustration">
+                            <span class="farm-title">FarmFresh</span>
+                            <span class="farm-subtitle">From farm to you</span>
+                            <div class="farm-boxes">
+                                <span>Produce</span>
+                                <span>Harvest</span>
+                                <span>Market</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-info">
+                        <p class="project-category">E-COMMERCE WEBSITE</p>
+                        <h3>Agricultural E-Commerce</h3>
+                        <p>
+                            An online platform for browsing agricultural
+                            products, designed to provide a clear and
+                            convenient shopping experience.
+                        </p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>UI/UX</span>
+                        </div>
+                        <button class="project-button" data-project="farm">
+                            View Project
+                        </button>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-art uc-art">
+                        <span class="project-number">PROJECT 02</span>
+                        <div class="report-illustration">
+                            <div class="report-sidebar"></div>
+                            <div class="report-content">
+                                <span class="report-heading">Student Reports</span>
+                                <div class="report-stat-row">
+                                    <i></i><i></i><i></i>
+                                </div>
+                                <div class="report-line"></div>
+                                <div class="report-line"></div>
+                                <div class="report-line short"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-info">
+                        <p class="project-category">STUDENT SYSTEM</p>
+                        <h3>UC Reporting System</h3>
+                        <p>
+                            A university reporting system concept that helps
+                            students submit school concerns and organize
+                            their reports.
+                        </p>
+                        <div class="project-tags">
+                            <span>System Design</span>
+                            <span>Forms</span>
+                            <span>Database</span>
+                        </div>
+                        <button class="project-button" data-project="uc">
+                            View Project
+                        </button>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-art design-art">
+                        <span class="project-number">PROJECT 03</span>
+                        <div class="website-illustration">
+                            <div class="website-top"></div>
+                            <div class="website-banner"></div>
+                            <div class="website-columns">
+                                <i></i><i></i><i></i>
+                            </div>
+                            <div class="website-footer"></div>
+                        </div>
+                    </div>
+
+                    <div class="project-info">
+                        <p class="project-category">WEB DESIGN</p>
+                        <h3>Website UI/UX & Routing</h3>
+                        <p>
+                            Website interface concepts and navigation
+                            structures focused on attractive layouts
+                            and smooth user journeys.
+                        </p>
+                        <div class="project-tags">
+                            <span>UI/UX</span>
+                            <span>Navigation</span>
+                            <span>Prototyping</span>
+                        </div>
+                        <button class="project-button" data-project="design">
+                            View Project
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        
+<section class="section contact-section" id="contact">
+    <div class="section-heading">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Contact Me</h2>
+        <p class="section-intro">
+            Feel free to connect with me through Facebook or email.
+        </p>
+    </div>
+
+    <div class="social-links">
+        <a
+            href="https://www.facebook.com/FMU.ULAT/"
+            class="social-card"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit my Facebook profile">
+            <div class="social-icon facebook-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                        fill="currentColor"
+                        d="M13.5 21v-8h2.7l.4-3.1h-3.1V8
+                        c0-.9.3-1.5 1.6-1.5h1.7V3.7
+                        C16.2 3.5 15.3 3.4 14.4 3.4
+                        c-2.7 0-4.5 1.6-4.5 4.6v1.9H7V13h2.9v8z"
+                    />
+                </svg>
+            </div>
+            <div>
+                <h3>Facebook</h3>
+                <p>Visit my Facebook profile</p>
+            </div>
+            <span class="social-arrow">↗</span>
+        </a>
+
+        <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=fiamaeulat22@gmail.com"
+            class="social-card"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Send me an email through Gmail"
+        >
+            <div class="social-icon gmail-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M3 18V6l9 7 9-7v12" />
+                    <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.2"
+                        stroke-linejoin="round"
+                        d="M3 6h18"
+                    />
+                </svg>
+            </div>
+            <div>
+                <h3>Gmail</h3>
+                <p>Send me an email</p>
+            </div>
+            <span class="social-arrow">↗</span>
+        </a>
+    </div>
+</section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 - Fiarrah Mae P. Ulat</p>
+    <footer class="footer">
+        <a href="#home" class="brand">My<span>Portfolio</span></a>
+        <p>Designed with creativity and a love for web design.</p>
+        <p class="copyright">© 2026 Fiarrah Mae P. Ulat</p>
     </footer>
+
+    <!-- PROJECT DETAILS MODAL -->
+    <div class="modal" id="projectModal" aria-hidden="true">
+        <div class="modal-backdrop" data-close-modal></div>
+
+        <div class="modal-content" role="dialog" aria-modal="true"
+             aria-labelledby="modalTitle">
+            <button class="modal-close" data-close-modal
+                    aria-label="Close project details">×</button>
+            <p class="eyebrow" id="modalCategory">PROJECT DETAILS</p>
+            <h2 id="modalTitle">Project Title</h2>
+            <p id="modalDescription"></p>
+            <h3>Skills Used</h3>
+            <div class="project-tags" id="modalTags"></div>
+            <button class="primary-button" data-close-modal>Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
