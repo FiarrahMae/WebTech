@@ -1,8 +1,6 @@
-
 const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
 
-// MOBILE NAVIGATION
 if (menuToggle && navLinks) {
     menuToggle.addEventListener("click", function () {
         const isOpen = navLinks.classList.toggle("open");
@@ -18,7 +16,7 @@ if (menuToggle && navLinks) {
     });
 }
 
-// PROJECT INFORMATION
+
 const projects = {
     farm: {
         category: "E-COMMERCE WEBSITE",
@@ -51,7 +49,7 @@ const projects = {
     }
 };
 
-// PROJECT DETAILS MODAL
+
 const modal = document.getElementById("projectModal");
 const modalCategory = document.getElementById("modalCategory");
 const modalTitle = document.getElementById("modalTitle");
@@ -85,7 +83,6 @@ document.querySelectorAll("[data-project]").forEach(function (button) {
     });
 });
 
-// CLOSE PROJECT MODAL
 function closeProjectModal() {
     if (!modal) {
         return;
@@ -106,7 +103,6 @@ document.addEventListener("keydown", function (event) {
     }
 });
 
-// HIGHLIGHT ACTIVE NAVIGATION LINK
 const sections = document.querySelectorAll("header[id], main section[id]");
 const sectionLinks = document.querySelectorAll(".nav-links a");
 
@@ -136,7 +132,6 @@ if ("IntersectionObserver" in window) {
     });
 }
 
-// CONTACT FORM DEMONSTRATION
 const contactForm = document.getElementById("contactForm");
 const formMessage = document.getElementById("formMessage");
 
