@@ -1,0 +1,4591 @@
+commit 4227b6919f1fa3b0fc108ab4f8abf5e8ea509595
+Author:     FiarrahMae <fiamaeulat22@gmail.com>
+AuthorDate: 2026-10-15 01:53:17 +0000
+Commit:     FiarrahMae <fiamaeulat22@gmail.com>
+CommitDate: 2026-10-15 01:53:17 +0000
+
+    yung design ayusin mo
+
+diff --git a/emmet-laboratory/portfolio.html b/emmet-laboratory/portfolio.html
+index aea2e84..bb59d45 100644
+--- a/emmet-laboratory/portfolio.html
++++ b/emmet-laboratory/portfolio.html
+@@ -1,3 +1,4 @@
++
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+@@ -30,7 +31,8 @@
+         <div class="hero-content">
+             <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+             <h1>Hello, I'm <span>Fiarrah!</span></h1>
+-            <h2>IT Student & Aspiring UI/UX Designer</h2>
++            <h2>IT Student &amp; Aspiring UI/UX Designer</h2>
++
+             <p class="hero-description">
+                 I enjoy designing beautiful websites and creating digital
+                 experiences that are simple, useful, and enjoyable to use.
+@@ -44,22 +46,31 @@
+             </div>
+         </div>
+ 
+-        <div class="hero-art" aria-hidden="true">
++        <div class="hero-art">
+             <div class="art-circle circle-one"></div>
+             <div class="art-circle circle-two"></div>
++
+             <div class="art-card">
+-                <div class="art-dots">
++                <div class="art-dots" aria-hidden="true">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                 </div>
++
+                 <div class="profile-circle">
+-            <img src="profile.jpg" alt="My profile picture">
++                    <img src="profile.jpg" alt="Fiarrah's profile picture">
++                </div>
++
++                <p>CREATIVE MINDS, BEAUTIFUL DESIGNS</p>
++                <div class="art-line"></div>
++                <div class="art-line short"></div>
++            </div>
++
++            <div class="floating-note">Design with purpose</div>
+         </div>
+     </header>
+ 
+     <main>
+-        <!-- ABOUT -->
+         <section class="section" id="about">
+             <div class="section-heading">
+                 <p class="eyebrow">GET TO KNOW ME</p>
+@@ -68,25 +79,29 @@
+ 
+             <div class="about-content">
+                 <div class="about-mark">F.</div>
++
+                 <div class="about-text">
+                     <h3>A student who loves designing websites.</h3>
++
+                     <p>
+-                        I am an Information Technology student interested in
+-                        website development, UI/UX design, and creative
+-                        problem-solving. I enjoy planning website layouts,
+-                        choosing colors, and organizing navigation to make
+-                        websites look attractive and easy to use.
++                        I am a 3rd year student taking Bachelor of Science
++                        in Information Technology major in Web Tech.
++                        I'm interested in website development, UI/UX design,
++                        and creative problem-solving. I enjoy planning website
++                        layouts, choosing colors, and organizing navigation
++                        to make websites attractive and easy to use.
+                     </p>
++
+                     <p>
+-                        Through my projects, I continue to develop my technical
+-                        skills and learn how design and functionality work
+-                        together to create a better user experience.
++                        Through my projects, I continue to develop my
++                        technical skills and learn how design and
++                        functionality work together to create a better
++                        user experience.
+                     </p>
+                 </div>
+             </div>
+         </section>
+ 
+-        <!-- SKILLS -->
+         <section class="section" id="skills">
+             <div class="section-heading">
+                 <p class="eyebrow">WHAT I CAN DO</p>
+@@ -99,7 +114,7 @@
+             <div class="skills-grid">
+                 <article class="skill-card">
+                     <div class="skill-icon">01</div>
+-                    <h3>HTML & CSS</h3>
++                    <h3>HTML &amp; CSS</h3>
+                     <p>
+                         Creating structured webpages and styling them with
+                         attractive layouts, colors, and responsive designs.
+@@ -126,7 +141,7 @@
+ 
+                 <article class="skill-card">
+                     <div class="skill-icon">04</div>
+-                    <h3>PHP & MySQL</h3>
++                    <h3>PHP &amp; MySQL</h3>
+                     <p>
+                         Learning server-side development and database
+                         management for functional web applications.
+@@ -152,8 +167,6 @@
+                 </article>
+             </div>
+         </section>
+-
+-        <!-- PROJECTS -->
+         <section class="section" id="projects">
+             <div class="section-heading">
+                 <p class="eyebrow">MY RECENT WORK</p>
+@@ -164,12 +177,15 @@
+             </div>
+ 
+             <div class="projects-grid">
++     
+                 <article class="project-card">
+                     <div class="project-art farm-art">
+                         <span class="project-number">PROJECT 01</span>
++
+                         <div class="farm-illustration">
+                             <span class="farm-title">FarmFresh</span>
+                             <span class="farm-subtitle">From farm to you</span>
++
+                             <div class="farm-boxes">
+                                 <span>Produce</span>
+                                 <span>Harvest</span>
+@@ -186,11 +202,13 @@
+                             products, designed to provide a clear and
+                             convenient shopping experience.
+                         </p>
++
+                         <div class="project-tags">
+                             <span>HTML</span>
+                             <span>CSS</span>
+                             <span>UI/UX</span>
+                         </div>
++
+                         <button class="project-button" data-project="farm">
+                             View Project
+                         </button>
+@@ -200,13 +218,17 @@
+                 <article class="project-card">
+                     <div class="project-art uc-art">
+                         <span class="project-number">PROJECT 02</span>
++
+                         <div class="report-illustration">
+                             <div class="report-sidebar"></div>
++
+                             <div class="report-content">
+                                 <span class="report-heading">Student Reports</span>
++
+                                 <div class="report-stat-row">
+                                     <i></i><i></i><i></i>
+                                 </div>
++
+                                 <div class="report-line"></div>
+                                 <div class="report-line"></div>
+                                 <div class="report-line short"></div>
+@@ -222,11 +244,13 @@
+                             students submit school concerns and organize
+                             their reports.
+                         </p>
++
+                         <div class="project-tags">
+                             <span>System Design</span>
+                             <span>Forms</span>
+                             <span>Database</span>
+                         </div>
++
+                         <button class="project-button" data-project="uc">
+                             View Project
+                         </button>
+@@ -236,29 +260,34 @@
+                 <article class="project-card">
+                     <div class="project-art design-art">
+                         <span class="project-number">PROJECT 03</span>
++
+                         <div class="website-illustration">
+                             <div class="website-top"></div>
+                             <div class="website-banner"></div>
++
+                             <div class="website-columns">
+                                 <i></i><i></i><i></i>
+                             </div>
++
+                             <div class="website-footer"></div>
+                         </div>
+                     </div>
+ 
+                     <div class="project-info">
+                         <p class="project-category">WEB DESIGN</p>
+-                        <h3>Website UI/UX & Routing</h3>
++                        <h3>Website UI/UX &amp; Routing</h3>
+                         <p>
+                             Website interface concepts and navigation
+                             structures focused on attractive layouts
+                             and smooth user journeys.
+                         </p>
++
+                         <div class="project-tags">
+                             <span>UI/UX</span>
+                             <span>Navigation</span>
+                             <span>Prototyping</span>
+                         </div>
++
+                         <button class="project-button" data-project="design">
+                             View Project
+                         </button>
+@@ -267,74 +296,67 @@
+             </div>
+         </section>
+ 
+-        
+-<section class="section contact-section" id="contact">
+-    <div class="section-heading">
+-        <p class="eyebrow">LET'S CONNECT</p>
+-        <h2>Contact Me</h2>
+-        <p class="section-intro">
+-            Feel free to connect with me through Facebook or email.
+-        </p>
+-    </div>
+-
+-    <div class="social-links">
+-        <a
+-            href="https://www.facebook.com/FMU.ULAT/"
+-            class="social-card"
+-            target="_blank"
+-            rel="noopener noreferrer"
+-            aria-label="Visit my Facebook profile">
+-            <div class="social-icon facebook-icon">
+-                <svg viewBox="0 0 24 24" aria-hidden="true">
+-                    <path
+-                        fill="currentColor"
+-                        d="M13.5 21v-8h2.7l.4-3.1h-3.1V8
+-                        c0-.9.3-1.5 1.6-1.5h1.7V3.7
+-                        C16.2 3.5 15.3 3.4 14.4 3.4
+-                        c-2.7 0-4.5 1.6-4.5 4.6v1.9H7V13h2.9v8z"
+-                    />
+-                </svg>
+-            </div>
+-            <div>
+-                <h3>Facebook</h3>
+-                <p>Visit my Facebook profile</p>
+-            </div>
+-            <span class="social-arrow">↗</span>
+-        </a>
+-
+-        <a
+-            href="https://mail.google.com/mail/?view=cm&fs=1&to=fiamaeulat22@gmail.com"
+-            class="social-card"
+-            target="_blank"
+-            rel="noopener noreferrer"
+-            aria-label="Send me an email through Gmail"
+-        >
+-            <div class="social-icon gmail-icon">
+-                <svg viewBox="0 0 24 24" aria-hidden="true">
+-                    <path
+-                        fill="none"
+-                        stroke="currentColor"
+-                        stroke-width="2.2"
+-                        stroke-linecap="round"
+-                        stroke-linejoin="round"
+-                        d="M3 18V6l9 7 9-7v12" />
+-                    <path
+-                        fill="none"
+-                        stroke="currentColor"
+-                        stroke-width="2.2"
+-                        stroke-linejoin="round"
+-                        d="M3 6h18"
+-                    />
+-                </svg>
++        <section class="section contact-section" id="contact">
++            <div class="section-heading">
++                <p class="eyebrow">LET'S CONNECT</p>
++                <h2>Contact Me</h2>
++                <p class="section-intro">
++                    Feel free to connect with me through Facebook or email.
++                </p>
+             </div>
+-            <div>
+-                <h3>Gmail</h3>
+-                <p>Send me an email</p>
++
++            <div class="social-links">
++                <a href="https://www.facebook.com/FMU.ULAT/"
++                   class="social-card"
++                   target="_blank"
++                   rel="noopener noreferrer"
++                   aria-label="Visit my Facebook profile">
++
++                    <div class="social-icon facebook-icon">
++                        <svg viewBox="0 0 24 24" aria-hidden="true">
++                            <path fill="currentColor"
++                                d="M13.5 21v-8h2.7l.4-3.1h-3.1V8
++                                c0-.9.3-1.5 1.6-1.5h1.7V3.7
++                                C16.2 3.5 15.3 3.4 14.4 3.4
++                                c-2.7 0-4.5 1.6-4.5 4.6v1.9H7V13h2.9v8z"/>
++                        </svg>
++                    </div>
++
++                    <div>
++                        <h3>Facebook</h3>
++                        <p>Visit my Facebook profile</p>
++                    </div>
++
++                    <span class="social-arrow">↗</span>
++                </a>
++
++                <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=fiamaeulat22@gmail.com"
++                   class="social-card"
++                   target="_blank"
++                   rel="noopener noreferrer"
++                   aria-label="Send me an email through Gmail">
++
++                    <div class="social-icon gmail-icon">
++                        <svg viewBox="0 0 24 24" aria-hidden="true">
++                            <path fill="none" stroke="currentColor"
++                                stroke-width="2.2" stroke-linecap="round"
++                                stroke-linejoin="round"
++                                d="M3 18V6l9 7 9-7v12"/>
++                            <path fill="none" stroke="currentColor"
++                                stroke-width="2.2" stroke-linejoin="round"
++                                d="M3 6h18"/>
++                        </svg>
++                    </div>
++
++                    <div>
++                        <h3>Gmail</h3>
++                        <p>Send me an email</p>
++                    </div>
++
++                    <span class="social-arrow">↗</span>
++                </a>
+             </div>
+-            <span class="social-arrow">↗</span>
+-        </a>
+-    </div>
+-</section>
++        </section>
+     </main>
+ 
+     <footer class="footer">
+@@ -343,19 +365,22 @@
+         <p class="copyright">© 2026 Fiarrah Mae P. Ulat</p>
+     </footer>
+ 
+-    <!-- PROJECT DETAILS MODAL -->
+     <div class="modal" id="projectModal" aria-hidden="true">
+         <div class="modal-backdrop" data-close-modal></div>
+ 
+         <div class="modal-content" role="dialog" aria-modal="true"
+              aria-labelledby="modalTitle">
++
+             <button class="modal-close" data-close-modal
+                     aria-label="Close project details">×</button>
++
+             <p class="eyebrow" id="modalCategory">PROJECT DETAILS</p>
+             <h2 id="modalTitle">Project Title</h2>
+             <p id="modalDescription"></p>
++
+             <h3>Skills Used</h3>
+             <div class="project-tags" id="modalTags"></div>
++
+             <button class="primary-button" data-close-modal>Close</button>
+         </div>
+     </div>
+diff --git a/emmet-laboratory/script.js b/emmet-laboratory/script.js
+index 6c7f473..9dd74d7 100644
+--- a/emmet-laboratory/script.js
++++ b/emmet-laboratory/script.js
+@@ -1,8 +1,6 @@
+-
+ const menuToggle = document.getElementById("menuToggle");
+ const navLinks = document.getElementById("navLinks");
+ 
+-// MOBILE NAVIGATION
+ if (menuToggle && navLinks) {
+     menuToggle.addEventListener("click", function () {
+         const isOpen = navLinks.classList.toggle("open");
+@@ -18,7 +16,7 @@ if (menuToggle && navLinks) {
+     });
+ }
+ 
+-// PROJECT INFORMATION
++
+ const projects = {
+     farm: {
+         category: "E-COMMERCE WEBSITE",
+@@ -51,7 +49,7 @@ const projects = {
+     }
+ };
+ 
+-// PROJECT DETAILS MODAL
++
+ const modal = document.getElementById("projectModal");
+ const modalCategory = document.getElementById("modalCategory");
+ const modalTitle = document.getElementById("modalTitle");
+@@ -85,7 +83,6 @@ document.querySelectorAll("[data-project]").forEach(function (button) {
+     });
+ });
+ 
+-// CLOSE PROJECT MODAL
+ function closeProjectModal() {
+     if (!modal) {
+         return;
+@@ -106,7 +103,6 @@ document.addEventListener("keydown", function (event) {
+     }
+ });
+ 
+-// HIGHLIGHT ACTIVE NAVIGATION LINK
+ const sections = document.querySelectorAll("header[id], main section[id]");
+ const sectionLinks = document.querySelectorAll(".nav-links a");
+ 
+@@ -136,7 +132,6 @@ if ("IntersectionObserver" in window) {
+     });
+ }
+ 
+-// CONTACT FORM DEMONSTRATION
+ const contactForm = document.getElementById("contactForm");
+ const formMessage = document.getElementById("formMessage");
+ 
+diff --git a/emmet-laboratory/style.css b/emmet-laboratory/style.css
+index 15197a5..816eabc 100644
+--- a/emmet-laboratory/style.css
++++ b/emmet-laboratory/style.css
+@@ -1,17 +1,24 @@
+-
+ @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+-
+ :root {
+-    --pink: #e879a9;
+-    --dark-pink: #c84d85;
+-    --light-pink: #fff0f6;
+-    --soft-pink: #ffe0ec;
+-    --lavender: #f1e9ff;
+-    --white: #ffffff;
+-    --text: #513849;
+-    --muted: #886d7d;
+-    --border: #f5d6e5;
+-    --shadow: 0 12px 35px rgba(200, 77, 133, 0.12);
++    --pink: #966666;
++    --dark-pink: #663333;
++    --light-pink: #FFCCCC;
++    --soft-pink: #CD9B9B;
++    --white: #FFFFFF;
++    --text: #663333;
++    --muted: #805858;
++    --border: #E8C1C1;
++    --background: #FFFFFF;
++    --card: #FFFFFF;
++
++    --navy: #663333;
++    --plum: #805858;
++    --burgundy: #663333;
++    --rose: #966666;
++    --orange: #CD9B9B;
++    --blush: #FFCCCC;
++
++    --shadow: 0 12px 35px rgba(102, 51, 51, 0.12);
+ }
+ 
+ * {
+@@ -23,8 +30,16 @@
+ 
+ body {
+     font-family: 'DM Sans', sans-serif;
+-    background: linear-gradient(135deg, #fff5f8, #f9f1ff, #fff0f6);
++    background: linear-gradient(
++        135deg,
++        #FFFFFF 0%,
++        #FFCCCC 25%,
++        #CD9B9B 50%,
++        #966666 75%,
++        #663333 100%
++    );
+     background-attachment: fixed;
++    background-size: 100% 100vh;
+     color: var(--text);
+     line-height: 1.7;
+ }
+@@ -44,8 +59,6 @@ button {
+     cursor: pointer;
+ }
+ 
+-/* NAVIGATION */
+-
+ .top-nav {
+     position: sticky;
+     top: 0;
+@@ -55,10 +68,10 @@ button {
+     justify-content: space-between;
+     gap: 20px;
+     padding: 14px max(4%, calc((100% - 1100px) / 2));
+-    background: rgba(255, 255, 255, 0.92);
++    background: rgba(255, 255, 255, 0.94);
+     backdrop-filter: blur(15px);
+     border-bottom: 1px solid var(--border);
+-    box-shadow: 0 4px 20px rgba(200, 77, 133, 0.06);
++    box-shadow: 0 4px 20px rgba(255, 22, 135, 0.08);
+ }
+ 
+ .brand {
+@@ -68,7 +81,7 @@ button {
+ }
+ 
+ .brand span {
+-    color: var(--dark-pink);
++    color: var(--pink);
+ }
+ 
+ .nav-links {
+@@ -88,7 +101,7 @@ button {
+ 
+ .nav-links a:hover,
+ .nav-links a.active {
+-    color: var(--dark-pink);
++    color: var(--pink);
+     background: var(--light-pink);
+ }
+ 
+@@ -98,12 +111,10 @@ button {
+     border-radius: 10px;
+     padding: 6px 12px;
+     background: var(--light-pink);
+-    color: var(--dark-pink);
++    color: var(--pink);
+     font-size: 1.3rem;
+ }
+ 
+-/* HERO */
+-
+ .hero {
+     position: relative;
+     display: grid;
+@@ -117,7 +128,7 @@ button {
+ }
+ 
+ .eyebrow {
+-    color: var(--dark-pink);
++    color: var(--pink);
+     font-size: 0.75rem;
+     font-weight: 700;
+     letter-spacing: 2px;
+@@ -132,13 +143,14 @@ button {
+ }
+ 
+ .hero h1 span {
+-    color: var(--dark-pink);
++    color: var(--pink);
+ }
+ 
+ .hero h2 {
+     margin-bottom: 18px;
+     font-size: 1.15rem;
+     font-weight: 600;
++    color: #68485b;
+ }
+ 
+ .hero-description {
+@@ -173,15 +185,15 @@ button {
+ }
+ 
+ .primary-button:hover {
+-    background: #a9366b;
+-    border-color: #a9366b;
++    background: #b93678;
++    border-color: #b93678;
+     transform: translateY(-3px);
+-    box-shadow: 0 8px 20px rgba(200, 77, 133, 0.2);
++    box-shadow: var(--shadow);
+ }
+ 
+ .secondary-button {
+-    background: var(--white);
+-    color: var(--dark-pink);
++    background: #fff7fb;
++    color: var(--pink);
+ }
+ 
+ .secondary-button:hover {
+@@ -189,8 +201,6 @@ button {
+     transform: translateY(-3px);
+ }
+ 
+-/* HERO DECORATION */
+-
+ .hero-art {
+     position: relative;
+     display: grid;
+@@ -206,7 +216,8 @@ button {
+ .circle-one {
+     width: 270px;
+     height: 270px;
+-    background: linear-gradient(135deg, #ffd9e8, #e8d9ff);
++    background: linear-gradient(135deg, #ffd9e9, #f0dcff);
++    box-shadow: 0 0 45px rgba(255, 22, 135, 0.12);
+ }
+ 
+ .circle-two {
+@@ -214,7 +225,7 @@ button {
+     bottom: 5%;
+     width: 100px;
+     height: 100px;
+-    border: 2px solid #efbdd5;
++    border: 2px solid var(--pink);
+ }
+ 
+ .art-card {
+@@ -222,11 +233,16 @@ button {
+     z-index: 1;
+     width: min(300px, 90%);
+     padding: 20px;
+-    border: 1px solid #ffffff;
++    border: 1px solid var(--border);
+     border-radius: 24px;
+-    background: rgba(255, 255, 255, 0.9);
+-    box-shadow: 0 20px 50px rgba(200, 77, 133, 0.16);
++    background: rgba(255, 255, 255, 0.96);
++    box-shadow: 0 20px 50px rgba(255, 22, 135, 0.14);
+     transform: rotate(-3deg);
++    transition: 0.3s ease;
++}
++
++.art-card:hover {
++    transform: rotate(0deg) translateY(-5px);
+ }
+ 
+ .art-dots {
+@@ -240,33 +256,37 @@ button {
+     width: 9px;
+     height: 9px;
+     border-radius: 50%;
+-    background: #f3a4c7;
++    background: var(--pink);
+ }
+ 
+ .art-dots span:nth-child(2) {
+-    background: #d9b8f4;
++    background: #b58bd8;
+ }
+ 
+ .art-dots span:nth-child(3) {
+-    background: #e879a9;
++    background: #f3a6ca;
+ }
+ 
+-.art-initials {
+-    display: grid;
+-    place-items: center;
+-    width: 100px;
+-    height: 100px;
++.profile-circle {
++    width: 140px;
++    height: 140px;
+     margin: 25px auto 15px;
+-    border: 5px solid #ffe0ec;
++    overflow: hidden;
++    border: 5px solid var(--pink);
+     border-radius: 50%;
+-    background: linear-gradient(135deg, #f9b9d4, #e2ccff);
+-    color: var(--dark-pink);
+-    font-family: 'Playfair Display', serif;
+-    font-size: 3.5rem;
+-    font-weight: 700;
++    background: var(--light-pink);
++    box-shadow: 0 0 25px rgba(255, 22, 135, 0.2);
++}
++
++.profile-circle img {
++    display: block;
++    width: 100%;
++    height: 100%;
++    object-fit: cover;
++    object-position: center;
+ }
+ 
+-.art-card p {
++.art-card > p {
+     text-align: center;
+     color: var(--muted);
+     font-size: 0.62rem;
+@@ -284,7 +304,7 @@ button {
+ .art-line.short {
+     width: 65%;
+     margin-top: 8px;
+-    background: var(--lavender);
++    background: #f3dce9;
+ }
+ 
+ .floating-note {
+@@ -295,24 +315,22 @@ button {
+     padding: 10px 16px;
+     border: 1px solid var(--border);
+     border-radius: 14px;
+-    background: var(--white);
+-    color: var(--dark-pink);
++    background: var(--card);
++    color: var(--pink);
+     box-shadow: var(--shadow);
+     font-size: 0.8rem;
+     font-weight: 700;
+     transform: rotate(3deg);
+ }
+ 
+-/* GENERAL SECTIONS */
+-
+ .section {
+     width: min(1100px, 90%);
+     margin: 30px auto;
+     padding: 55px;
+     border: 1px solid var(--border);
+     border-radius: 28px;
+-    background: rgba(255, 255, 255, 0.9);
+-    box-shadow: var(--shadow);
++    background: rgba(255, 255, 255, 0.96);
++    box-shadow: 0 12px 35px rgba(180, 90, 130, 0.08);
+     scroll-margin-top: 90px;
+ }
+ 
+@@ -323,7 +341,7 @@ button {
+ 
+ .section-heading h2 {
+     margin: 5px 0 8px;
+-    color: var(--dark-pink);
++    color: var(--pink);
+     font-family: 'Playfair Display', serif;
+     font-size: clamp(2rem, 4vw, 2.8rem);
+ }
+@@ -333,8 +351,6 @@ button {
+     font-size: 0.9rem;
+ }
+ 
+-/* ABOUT */
+-
+ .about-content {
+     display: grid;
+     grid-template-columns: 150px 1fr;
+@@ -349,17 +365,19 @@ button {
+     place-items: center;
+     width: 140px;
+     height: 140px;
+-    border: 7px solid #ffe0ec;
++    border: 5px solid var(--pink);
+     border-radius: 50%;
+-    background: linear-gradient(135deg, #ffd9e8, #e8d9ff);
+-    color: var(--dark-pink);
++    background: linear-gradient(135deg, #df5798, #b93678);
++    color: var(--white);
+     font-family: 'Playfair Display', serif;
+     font-size: 4rem;
+     font-weight: 700;
++    box-shadow: 0 0 25px rgba(255, 22, 135, 0.15);
+ }
+ 
+ .about-text h3 {
+     margin-bottom: 12px;
++    color: var(--text);
+     font-size: 1.15rem;
+ }
+ 
+@@ -369,8 +387,6 @@ button {
+     font-size: 0.92rem;
+ }
+ 
+-/* SKILLS */
+-
+ .skills-grid {
+     display: grid;
+     grid-template-columns: repeat(3, minmax(0, 1fr));
+@@ -381,14 +397,14 @@ button {
+     padding: 25px;
+     border: 1px solid var(--border);
+     border-radius: 20px;
+-    background: linear-gradient(145deg, #fff1f7, #f5efff);
++    background: linear-gradient(145deg, #fff0f6, #fff8fc);
+     transition: 0.3s ease;
+ }
+ 
+ .skill-card:hover {
+     transform: translateY(-5px);
+     border-color: var(--pink);
+-    box-shadow: 0 12px 25px rgba(200, 77, 133, 0.1);
++    box-shadow: var(--shadow);
+ }
+ 
+ .skill-icon {
+@@ -398,14 +414,14 @@ button {
+     height: 42px;
+     margin-bottom: 16px;
+     border-radius: 13px;
+-    background: var(--white);
+-    color: var(--dark-pink);
++    background: #f8dce9;
++    color: var(--pink);
+     font-weight: 700;
+ }
+ 
+ .skill-card h3 {
+     margin-bottom: 8px;
+-    color: var(--dark-pink);
++    color: var(--pink);
+     font-size: 1rem;
+ }
+ 
+@@ -414,8 +430,6 @@ button {
+     font-size: 0.85rem;
+ }
+ 
+-/* PROJECTS */
+-
+ .projects-grid {
+     display: grid;
+     grid-template-columns: repeat(3, minmax(0, 1fr));
+@@ -426,13 +440,13 @@ button {
+     overflow: hidden;
+     border: 1px solid var(--border);
+     border-radius: 22px;
+-    background: var(--white);
++    background: #fff7fb;
+     transition: 0.3s ease;
+ }
+ 
+ .project-card:hover {
+     transform: translateY(-6px);
+-    box-shadow: 0 15px 30px rgba(200, 77, 133, 0.14);
++    box-shadow: var(--shadow);
+     border-color: var(--pink);
+ }
+ 
+@@ -445,15 +459,15 @@ button {
+ }
+ 
+ .farm-art {
+-    background: linear-gradient(135deg, #ffe9d5, #fff4e9);
++    background: linear-gradient(135deg, #f6e4d9, #fff4ed);
+ }
+ 
+ .uc-art {
+-    background: linear-gradient(135deg, #e6e5ff, #f5eaff);
++    background: linear-gradient(135deg, #f0e5f7, #f8f1fb);
+ }
+ 
+ .design-art {
+-    background: linear-gradient(135deg, #ffddec, #f4e6ff);
++    background: linear-gradient(135deg, #f7dfea, #fff0f8);
+ }
+ 
+ .project-number {
+@@ -462,8 +476,8 @@ button {
+     left: 12px;
+     padding: 5px 9px;
+     border-radius: 20px;
+-    background: rgba(255, 255, 255, 0.8);
+-    color: var(--dark-pink);
++    background: #fff0f6;
++    color: var(--pink);
+     font-size: 0.62rem;
+     font-weight: 700;
+     letter-spacing: 0.5px;
+@@ -472,28 +486,29 @@ button {
+ .farm-illustration {
+     width: 85%;
+     padding: 20px;
+-    border: 1px solid #ffffff;
++    border: 1px solid #edbcd4;
+     border-radius: 14px;
+-    background: rgba(255, 255, 255, 0.8);
++    background: #fff4f8;
+     text-align: center;
+ }
+ 
+ .farm-title {
+     display: block;
+-    color: #b96c43;
++    color: var(--pink);
+     font-family: 'Playfair Display', serif;
+     font-size: 1.5rem;
+     font-weight: 700;
+ }
+ 
+ .farm-subtitle {
+-    color: #8e776a;
++    color: var(--muted);
+     font-size: 0.7rem;
+ }
+ 
+ .farm-boxes {
+     display: flex;
+     justify-content: center;
++    flex-wrap: wrap;
+     gap: 6px;
+     margin-top: 15px;
+ }
+@@ -501,8 +516,8 @@ button {
+ .farm-boxes span {
+     padding: 5px 7px;
+     border-radius: 6px;
+-    background: #f5e4d6;
+-    color: #875b45;
++    background: #f8dce9;
++    color: #a43c72;
+     font-size: 0.58rem;
+ }
+ 
+@@ -511,15 +526,15 @@ button {
+     width: 85%;
+     min-height: 120px;
+     overflow: hidden;
+-    border: 5px solid #ffffff;
++    border: 1px solid #dfc5e8;
+     border-radius: 12px;
+-    background: #ffffff;
+-    box-shadow: 0 8px 20px #8870bb1a;
++    background: #fff8fc;
++    box-shadow: 0 8px 20px rgba(180, 90, 130, 0.10);
+ }
+ 
+ .report-sidebar {
+     width: 24%;
+-    background: #c7b8ec;
++    background: #d9b4e2;
+ }
+ 
+ .report-content {
+@@ -529,7 +544,7 @@ button {
+ 
+ .report-heading {
+     display: block;
+-    color: #65528d;
++    color: var(--pink);
+     font-size: 0.7rem;
+     font-weight: 700;
+ }
+@@ -544,14 +559,14 @@ button {
+     flex: 1;
+     height: 20px;
+     border-radius: 5px;
+-    background: #eee8fa;
++    background: #f0c9dc;
+ }
+ 
+ .report-line {
+     height: 7px;
+     margin-top: 7px;
+     border-radius: 5px;
+-    background: #eee8fa;
++    background: #f0c9dc;
+ }
+ 
+ .report-line.short {
+@@ -562,23 +577,23 @@ button {
+     width: 85%;
+     min-height: 120px;
+     padding: 12px;
+-    border: 5px solid #ffffff;
++    border: 1px solid #edbcd4;
+     border-radius: 12px;
+     background: #ffffff;
+-    box-shadow: 0 8px 20px #c84d851a;
++    box-shadow: 0 8px 20px rgba(255, 22, 135, 0.08);
+ }
+ 
+ .website-top {
+     height: 9px;
+     margin-bottom: 9px;
+     border-radius: 5px;
+-    background: #f8d5e6;
++    background: var(--pink);
+ }
+ 
+ .website-banner {
+     height: 37px;
+     border-radius: 6px;
+-    background: linear-gradient(90deg, #f7c4dd, #e3d3ff);
++    background: linear-gradient(90deg, #df5798, #c94386);
+ }
+ 
+ .website-columns {
+@@ -591,7 +606,7 @@ button {
+     flex: 1;
+     height: 23px;
+     border-radius: 5px;
+-    background: #f5e8f4;
++    background: #f8dce9;
+ }
+ 
+ .website-footer {
+@@ -599,7 +614,7 @@ button {
+     height: 6px;
+     margin-top: 8px;
+     border-radius: 5px;
+-    background: #e7d9f4;
++    background: #d99ab9;
+ }
+ 
+ .project-info {
+@@ -607,7 +622,7 @@ button {
+ }
+ 
+ .project-category {
+-    color: var(--dark-pink);
++    color: var(--pink);
+     font-size: 0.65rem;
+     font-weight: 700;
+     letter-spacing: 1px;
+@@ -615,6 +630,7 @@ button {
+ 
+ .project-info h3 {
+     margin: 7px 0 10px;
++    color: var(--text);
+     font-size: 1.08rem;
+ }
+ 
+@@ -635,7 +651,7 @@ button {
+     padding: 5px 9px;
+     border: 1px solid var(--border);
+     border-radius: 20px;
+-    background: var(--light-pink);
++    background: #fff0f6;
+     color: var(--dark-pink);
+     font-size: 0.65rem;
+ }
+@@ -653,70 +669,73 @@ button {
+ }
+ 
+ .project-button:hover {
+-    background: #a9366b;
++    background: #b93678;
+     transform: translateY(-2px);
+ }
+ 
+-/* CONTACT */
+-
+-.contact-section form {
+-    max-width: 720px;
+-    margin: auto;
+-}
+-
+-.form-row {
++.social-links {
+     display: grid;
+-    grid-template-columns: 1fr 1fr;
+-    gap: 18px;
++    grid-template-columns: repeat(2, minmax(0, 1fr));
++    gap: 20px;
++    max-width: 750px;
++    margin: 35px auto 10px;
+ }
+ 
+-.form-field {
+-    margin-bottom: 17px;
++.social-card {
++    display: flex;
++    align-items: center;
++    gap: 15px;
++    padding: 22px;
++    border: 1px solid var(--border);
++    border-radius: 20px;
++    background: linear-gradient(135deg, #fff0f6, #fff8fc);
++    transition: 0.3s ease;
+ }
+ 
+-.form-field label {
+-    display: block;
+-    margin-bottom: 6px;
+-    font-size: 0.85rem;
+-    font-weight: 700;
++.social-card:hover {
++    transform: translateY(-5px);
++    border-color: var(--pink);
++    box-shadow: var(--shadow);
+ }
+ 
+-.form-field input,
+-.form-field textarea {
+-    width: 100%;
+-    padding: 12px 14px;
+-    border: 1px solid #eacbd9;
+-    border-radius: 12px;
+-    outline: none;
+-    background: #fffafd;
+-    color: var(--text);
+-    transition: 0.3s ease;
++.social-icon {
++    display: grid;
++    flex-shrink: 0;
++    place-items: center;
++    width: 50px;
++    height: 50px;
++    border-radius: 15px;
++    background: #f8dce9;
++    color: var(--pink);
+ }
+ 
+-.form-field input:focus,
+-.form-field textarea:focus {
+-    border-color: var(--pink);
+-    box-shadow: 0 0 0 4px rgba(232, 121, 169, 0.13);
++.social-icon svg {
++    width: 27px;
++    height: 27px;
+ }
+ 
+-.form-field textarea {
+-    resize: vertical;
++.social-card h3 {
++    color: var(--pink);
++    font-size: 1rem;
+ }
+ 
+-#formMessage {
+-    margin-top: 12px;
+-    color: var(--dark-pink);
+-    font-size: 0.85rem;
+-    font-weight: 700;
++.social-card p {
++    color: var(--muted);
++    font-size: 0.8rem;
+ }
+ 
+-/* FOOTER */
++.social-arrow {
++    margin-left: auto;
++    color: var(--pink);
++    font-size: 1.3rem;
++}
+ 
+ .footer {
+     padding: 30px 15px;
+     text-align: center;
+-    background: #f9dce9;
+-    color: #89536e;
++    background: #f6e6ef;
++    color: var(--muted);
++    border-top: 1px solid var(--border);
+ }
+ 
+ .footer p {
+@@ -729,8 +748,6 @@ button {
+     font-size: 0.75rem;
+ }
+ 
+-/* PROJECT DETAILS MODAL */
+-
+ .modal {
+     position: fixed;
+     inset: 0;
+@@ -748,7 +765,7 @@ button {
+ .modal-backdrop {
+     position: absolute;
+     inset: 0;
+-    background: rgba(65, 35, 53, 0.45);
++    background: rgba(73, 53, 65, 0.55);
+     backdrop-filter: blur(4px);
+ }
+ 
+@@ -759,13 +776,13 @@ button {
+     padding: 35px;
+     border: 1px solid var(--border);
+     border-radius: 25px;
+-    background: var(--white);
+-    box-shadow: 0 20px 60px rgba(100, 45, 75, 0.2);
++    background: #ffffff;
++    box-shadow: 0 20px 60px rgba(73, 53, 65, 0.15);
+ }
+ 
+ .modal-content h2 {
+     margin: 8px 0 15px;
+-    color: var(--dark-pink);
++    color: var(--pink);
+     font-family: 'Playfair Display', serif;
+ }
+ 
+@@ -776,6 +793,7 @@ button {
+ 
+ .modal-content h3 {
+     margin-top: 20px;
++    color: var(--text);
+     font-size: 0.95rem;
+ }
+ 
+@@ -785,12 +803,10 @@ button {
+     right: 16px;
+     border: none;
+     background: transparent;
+-    color: var(--dark-pink);
++    color: var(--pink);
+     font-size: 1.8rem;
+ }
+ 
+-/* RESPONSIVE DESIGN */
+-
+ @media (max-width: 900px) {
+     .hero {
+         gap: 25px;
+@@ -863,7 +879,7 @@ button {
+ 
+     .skills-grid,
+     .projects-grid,
+-    .form-row {
++    .social-links {
+         grid-template-columns: 1fr;
+     }
+ 
+@@ -884,86 +900,57 @@ button {
+         transition: none !important;
+     }
+ }
+-
+-/* SOCIAL CONTACT LINKS */
+-
+-.social-links {
+-    display: grid;
+-    grid-template-columns: repeat(2, minmax(0, 1fr));
+-    gap: 20px;
+-    max-width: 750px;
+-    margin: 35px auto 10px;
++.top-nav {
++    background: rgba(255, 255, 255, 0.94);
++    border-bottom: 1px solid #E8C1C1;
+ }
+ 
+-.social-card {
+-    display: flex;
+-    align-items: center;
+-    gap: 15px;
+-    padding: 22px;
+-    border: 1px solid var(--border);
+-    border-radius: 20px;
+-    background: linear-gradient(135deg, #fff1f7, #f5efff);
+-    transition: 0.3s ease;
++.section {
++    background: rgba(255, 255, 255, 0.94);
++    border-color: #E8C1C1;
+ }
+ 
+-.social-card:hover {
+-    transform: translateY(-5px);
+-    border-color: var(--pink);
+-    box-shadow: var(--shadow);
++.skill-card,
++.social-card {
++    background: linear-gradient(
++        135deg,
++        #FFFFFF,
++        #FFCCCC
++    );
+ }
+ 
+-.social-icon {
+-    display: grid;
+-    flex-shrink: 0;
+-    place-items: center;
+-    width: 50px;
+-    height: 50px;
+-    border-radius: 15px;
+-    background: white;
+-    color: var(--dark-pink);
++.project-card {
++    background: #FFFFFF;
++    border-color: #CD9B9B;
+ }
+ 
+-.social-icon svg {
+-    width: 27px;
+-    height: 27px;
++/* Burgundy buttons */
++.primary-button,
++.project-button {
++    background: #663333;
++    color: #FFFFFF;
++    border-color: #663333;
+ }
+ 
+-.social-card h3 {
+-    color: var(--dark-pink);
+-    font-size: 1rem;
++.primary-button:hover,
++.project-button:hover {
++    background: #805858;
++    border-color: #805858;
+ }
+ 
+-.social-card p {
+-    color: var(--muted);
+-    font-size: 0.8rem;
++.footer {
++    background: #663333;
++    color: #FFFFFF;
++    border-top: 1px solid #966666;
+ }
+ 
+-.social-arrow {
+-    margin-left: auto;
+-    color: var(--dark-pink);
+-    font-size: 1.3rem;
++.footer p,
++.footer .copyright {
++    color: #FFFFFF;
+ }
+ 
+-@media (max-width: 560px) {
+-    .social-links {
+-        grid-template-columns: 1fr;
++@media (max-width: 620px) {
++    .section {
++        background: rgba(255, 255, 255, 0.96);
+     }
+-}
+-
+-.profile-circle {
+-    width: 140px;
+-    height: 140px;
+-    border-radius: 50%;
+-    overflow: hidden;
+-    border: 6px solid #f8c8df;
+-    background: #f0d5f7;
+-    margin: 0 auto;
+-}
+-
+-.profile-circle img {
+-    width: 100%;
+-    height: 100%;
+-    object-fit: cover;
+-    object-position: center;
+-    display: block;
+-}
++}
+\ No newline at end of file
+
+commit 90219180935eabb2474fe966937d1e976f700ef8
+Author:     FiarrahMae <fiamaeulat22@gmail.com>
+AuthorDate: 2026-10-14 15:34:45 +0000
+Commit:     FiarrahMae <fiamaeulat22@gmail.com>
+CommitDate: 2026-10-14 15:34:45 +0000
+
+    TAPOS NA
+
+diff --git a/emmet-laboratory/index.html b/emmet-laboratory/index.html
+index 47c8f61..0084285 100644
+--- a/emmet-laboratory/index.html
++++ b/emmet-laboratory/index.html
+@@ -1,3 +1,4 @@
++
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+@@ -15,11 +16,25 @@
+         <a href="portfolio.html">Portfolio</a>
+     </nav>
+ 
+-    <h1>Emmet Laboratory</h1>
+-    <p>Learning HTML using Emmet in Visual Studio Code.</p>
++    <header>
++        <h1>Emmet Laboratory</h1>
++        <p>Learning HTML using Emmet in Visual Studio Code.</p>
++    </header>
++
++    <main>
++        <section>
++            <h2>Welcome</h2>
++            <p>
++                This laboratory demonstrates how to use Emmet
++                to create HTML structures quickly and efficiently.
++            </p>
++        </section>
++    </main>
+ 
+     <footer>
+         <p>&copy; 2026 - Fiarrah Mae P. Ulat</p>
+     </footer>
++
++    <script src="script.js"></script>
+ </body>
+-</html>
+\ No newline at end of file
++</html>
+diff --git a/emmet-laboratory/portfolio.html b/emmet-laboratory/portfolio.html
+index c1b33ab..aea2e84 100644
+--- a/emmet-laboratory/portfolio.html
++++ b/emmet-laboratory/portfolio.html
+@@ -1,110 +1,365 @@
+-
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <meta name="description" content="My student portfolio showcasing web development, UI/UX design, and projects.">
+     <title>My Student Portfolio</title>
++    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+-    <nav>
+-        <a href="01-basic.html">Part 1</a> |
+-        <a href="02-classes-ids.html">Part 2</a> |
+-        <a href="03-navigation.html">Part 3</a> |
+-        <a href="04-form.html">Part 4</a> |
+-        <a href="05-semantic.html">Part 5</a> |
+-        <a href="portfolio.html">Portfolio</a>
++
++    <nav class="top-nav">
++        <a href="#home" class="brand">My<span>Portfolio</span></a>
++
++        <button class="menu-toggle" id="menuToggle"
++                aria-label="Toggle navigation" aria-expanded="false">
++            ☰
++        </button>
++
++        <div class="nav-links" id="navLinks">
++            <a href="#home">Home</a>
++            <a href="#about">About</a>
++            <a href="#skills">Skills</a>
++            <a href="#projects">Projects</a>
++            <a href="#contact">Contact</a>
++        </div>
+     </nav>
+ 
+-    <header>
+-        <h1>My Portfolio</h1>
+-        <h2>Student Name</h2>
+-        <p>A student learning web development and programming.</p>
+-
+-        <nav>
+-            <ul>
+-                <li><a href="#home">Home</a></li>
+-                <li><a href="#about">About</a></li>
+-                <li><a href="#skills">Skills</a></li>
+-                <li><a href="#projects">Projects</a></li>
+-                <li><a href="#contact">Contact</a></li>
+-            </ul>
+-        </nav>
++    <header class="hero" id="home">
++        <div class="hero-content">
++            <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
++            <h1>Hello, I'm <span>Fiarrah!</span></h1>
++            <h2>IT Student & Aspiring UI/UX Designer</h2>
++            <p class="hero-description">
++                I enjoy designing beautiful websites and creating digital
++                experiences that are simple, useful, and enjoyable to use.
++                I am continuously learning and improving my web development
++                and design skills.
++            </p>
++
++            <div class="hero-buttons">
++                <a href="#projects" class="primary-button">Explore My Projects</a>
++                <a href="#contact" class="secondary-button">Contact Me</a>
++            </div>
++        </div>
++
++        <div class="hero-art" aria-hidden="true">
++            <div class="art-circle circle-one"></div>
++            <div class="art-circle circle-two"></div>
++            <div class="art-card">
++                <div class="art-dots">
++                    <span></span>
++                    <span></span>
++                    <span></span>
++                </div>
++                <div class="profile-circle">
++            <img src="profile.jpg" alt="My profile picture">
++        </div>
+     </header>
+ 
+     <main>
+-        <section id="home">
+-            <h2>Welcome to My Portfolio</h2>
+-            <p>This page showcases my skills and projects.</p>
+-        </section>
++        <!-- ABOUT -->
++        <section class="section" id="about">
++            <div class="section-heading">
++                <p class="eyebrow">GET TO KNOW ME</p>
++                <h2>About Me</h2>
++            </div>
+ 
+-        <section id="about">
+-            <h2>About Me</h2>
+-            <img src="images/profile.jpg" alt="My Profile Photo" width="150">
+-            <p>I am a student interested in technology, programming, and website development.</p>
++            <div class="about-content">
++                <div class="about-mark">F.</div>
++                <div class="about-text">
++                    <h3>A student who loves designing websites.</h3>
++                    <p>
++                        I am an Information Technology student interested in
++                        website development, UI/UX design, and creative
++                        problem-solving. I enjoy planning website layouts,
++                        choosing colors, and organizing navigation to make
++                        websites look attractive and easy to use.
++                    </p>
++                    <p>
++                        Through my projects, I continue to develop my technical
++                        skills and learn how design and functionality work
++                        together to create a better user experience.
++                    </p>
++                </div>
++            </div>
+         </section>
+ 
+-        <section id="skills">
+-            <h2>My Skills</h2>
+-            <ul>
+-                <li>HTML</li>
+-                <li>CSS</li>
+-                <li>JavaScript</li>
+-                <li>PHP</li>
+-                <li>MySQL</li>
+-                <li>Git</li>
+-            </ul>
+-        </section>
++        <!-- SKILLS -->
++        <section class="section" id="skills">
++            <div class="section-heading">
++                <p class="eyebrow">WHAT I CAN DO</p>
++                <h2>My Skills</h2>
++                <p class="section-intro">
++                    Skills I am developing through my studies and projects.
++                </p>
++            </div>
+ 
+-        <section id="projects">
+-            <h2>My Projects</h2>
++            <div class="skills-grid">
++                <article class="skill-card">
++                    <div class="skill-icon">01</div>
++                    <h3>HTML & CSS</h3>
++                    <p>
++                        Creating structured webpages and styling them with
++                        attractive layouts, colors, and responsive designs.
++                    </p>
++                </article>
+ 
+-            <div class="project-card">
+-                <h3>Project 1: Personal Website</h3>
+-                <p>A basic website created using HTML.</p>
+-                <a href="#projects">View Project</a>
+-            </div>
++                <article class="skill-card">
++                    <div class="skill-icon">02</div>
++                    <h3>JavaScript</h3>
++                    <p>
++                        Adding interactive features and improving how users
++                        navigate and interact with websites.
++                    </p>
++                </article>
+ 
+-            <div class="project-card">
+-                <h3>Project 2: Student Registration</h3>
+-                <p>A form for collecting student information.</p>
+-                <a href="#projects">View Project</a>
+-            </div>
++                <article class="skill-card">
++                    <div class="skill-icon">03</div>
++                    <h3>UI/UX Design</h3>
++                    <p>
++                        Designing user-friendly interfaces, organizing content,
++                        and creating layouts with a consistent visual style.
++                    </p>
++                </article>
++
++                <article class="skill-card">
++                    <div class="skill-icon">04</div>
++                    <h3>PHP & MySQL</h3>
++                    <p>
++                        Learning server-side development and database
++                        management for functional web applications.
++                    </p>
++                </article>
+ 
+-            <div class="project-card">
+-                <h3>Project 3: Navigation Page</h3>
+-                <p>A webpage demonstrating navigation links and semantic elements.</p>
+-                <a href="#projects">View Project</a>
++                <article class="skill-card">
++                    <div class="skill-icon">05</div>
++                    <h3>Website Routing</h3>
++                    <p>
++                        Organizing page links and navigation paths so users
++                        can move through a website clearly and easily.
++                    </p>
++                </article>
++
++                <article class="skill-card">
++                    <div class="skill-icon">06</div>
++                    <h3>Creative Design</h3>
++                    <p>
++                        Exploring colors, typography, spacing, and visual
++                        details to make websites attractive and consistent.
++                    </p>
++                </article>
+             </div>
+         </section>
+ 
+-        <section id="contact">
+-            <h2>Contact Me</h2>
++        <!-- PROJECTS -->
++        <section class="section" id="projects">
++            <div class="section-heading">
++                <p class="eyebrow">MY RECENT WORK</p>
++                <h2>My Projects</h2>
++                <p class="section-intro">
++                    Projects where I combine design, creativity, and technology.
++                </p>
++            </div>
++
++            <div class="projects-grid">
++                <article class="project-card">
++                    <div class="project-art farm-art">
++                        <span class="project-number">PROJECT 01</span>
++                        <div class="farm-illustration">
++                            <span class="farm-title">FarmFresh</span>
++                            <span class="farm-subtitle">From farm to you</span>
++                            <div class="farm-boxes">
++                                <span>Produce</span>
++                                <span>Harvest</span>
++                                <span>Market</span>
++                            </div>
++                        </div>
++                    </div>
+ 
+-            <form action="#" method="post">
+-                <label for="name">Name:</label>
+-                <input type="text" id="name" name="name" required>
+-                <br><br>
++                    <div class="project-info">
++                        <p class="project-category">E-COMMERCE WEBSITE</p>
++                        <h3>Agricultural E-Commerce</h3>
++                        <p>
++                            An online platform for browsing agricultural
++                            products, designed to provide a clear and
++                            convenient shopping experience.
++                        </p>
++                        <div class="project-tags">
++                            <span>HTML</span>
++                            <span>CSS</span>
++                            <span>UI/UX</span>
++                        </div>
++                        <button class="project-button" data-project="farm">
++                            View Project
++                        </button>
++                    </div>
++                </article>
+ 
+-                <label for="contact-email">Email:</label>
+-                <input type="email" id="contact-email" name="email" required>
+-                <br><br>
++                <article class="project-card">
++                    <div class="project-art uc-art">
++                        <span class="project-number">PROJECT 02</span>
++                        <div class="report-illustration">
++                            <div class="report-sidebar"></div>
++                            <div class="report-content">
++                                <span class="report-heading">Student Reports</span>
++                                <div class="report-stat-row">
++                                    <i></i><i></i><i></i>
++                                </div>
++                                <div class="report-line"></div>
++                                <div class="report-line"></div>
++                                <div class="report-line short"></div>
++                            </div>
++                        </div>
++                    </div>
+ 
+-                <label for="subject">Subject:</label>
+-                <input type="text" id="subject" name="subject" required>
+-                <br><br>
++                    <div class="project-info">
++                        <p class="project-category">STUDENT SYSTEM</p>
++                        <h3>UC Reporting System</h3>
++                        <p>
++                            A university reporting system concept that helps
++                            students submit school concerns and organize
++                            their reports.
++                        </p>
++                        <div class="project-tags">
++                            <span>System Design</span>
++                            <span>Forms</span>
++                            <span>Database</span>
++                        </div>
++                        <button class="project-button" data-project="uc">
++                            View Project
++                        </button>
++                    </div>
++                </article>
+ 
+-                <label for="message">Message:</label>
+-                <textarea id="message" name="message" rows="5" cols="30" required></textarea>
+-                <br><br>
++                <article class="project-card">
++                    <div class="project-art design-art">
++                        <span class="project-number">PROJECT 03</span>
++                        <div class="website-illustration">
++                            <div class="website-top"></div>
++                            <div class="website-banner"></div>
++                            <div class="website-columns">
++                                <i></i><i></i><i></i>
++                            </div>
++                            <div class="website-footer"></div>
++                        </div>
++                    </div>
+ 
+-                <input type="submit" value="Send Message">
+-            </form>
++                    <div class="project-info">
++                        <p class="project-category">WEB DESIGN</p>
++                        <h3>Website UI/UX & Routing</h3>
++                        <p>
++                            Website interface concepts and navigation
++                            structures focused on attractive layouts
++                            and smooth user journeys.
++                        </p>
++                        <div class="project-tags">
++                            <span>UI/UX</span>
++                            <span>Navigation</span>
++                            <span>Prototyping</span>
++                        </div>
++                        <button class="project-button" data-project="design">
++                            View Project
++                        </button>
++                    </div>
++                </article>
++            </div>
+         </section>
++
++        
++<section class="section contact-section" id="contact">
++    <div class="section-heading">
++        <p class="eyebrow">LET'S CONNECT</p>
++        <h2>Contact Me</h2>
++        <p class="section-intro">
++            Feel free to connect with me through Facebook or email.
++        </p>
++    </div>
++
++    <div class="social-links">
++        <a
++            href="https://www.facebook.com/FMU.ULAT/"
++            class="social-card"
++            target="_blank"
++            rel="noopener noreferrer"
++            aria-label="Visit my Facebook profile">
++            <div class="social-icon facebook-icon">
++                <svg viewBox="0 0 24 24" aria-hidden="true">
++                    <path
++                        fill="currentColor"
++                        d="M13.5 21v-8h2.7l.4-3.1h-3.1V8
++                        c0-.9.3-1.5 1.6-1.5h1.7V3.7
++                        C16.2 3.5 15.3 3.4 14.4 3.4
++                        c-2.7 0-4.5 1.6-4.5 4.6v1.9H7V13h2.9v8z"
++                    />
++                </svg>
++            </div>
++            <div>
++                <h3>Facebook</h3>
++                <p>Visit my Facebook profile</p>
++            </div>
++            <span class="social-arrow">↗</span>
++        </a>
++
++        <a
++            href="https://mail.google.com/mail/?view=cm&fs=1&to=fiamaeulat22@gmail.com"
++            class="social-card"
++            target="_blank"
++            rel="noopener noreferrer"
++            aria-label="Send me an email through Gmail"
++        >
++            <div class="social-icon gmail-icon">
++                <svg viewBox="0 0 24 24" aria-hidden="true">
++                    <path
++                        fill="none"
++                        stroke="currentColor"
++                        stroke-width="2.2"
++                        stroke-linecap="round"
++                        stroke-linejoin="round"
++                        d="M3 18V6l9 7 9-7v12" />
++                    <path
++                        fill="none"
++                        stroke="currentColor"
++                        stroke-width="2.2"
++                        stroke-linejoin="round"
++                        d="M3 6h18"
++                    />
++                </svg>
++            </div>
++            <div>
++                <h3>Gmail</h3>
++                <p>Send me an email</p>
++            </div>
++            <span class="social-arrow">↗</span>
++        </a>
++    </div>
++</section>
+     </main>
+ 
+-    <footer>
+-        <p>&copy; 2026 - Fiarrah Mae P. Ulat</p>
++    <footer class="footer">
++        <a href="#home" class="brand">My<span>Portfolio</span></a>
++        <p>Designed with creativity and a love for web design.</p>
++        <p class="copyright">© 2026 Fiarrah Mae P. Ulat</p>
+     </footer>
++
++    <!-- PROJECT DETAILS MODAL -->
++    <div class="modal" id="projectModal" aria-hidden="true">
++        <div class="modal-backdrop" data-close-modal></div>
++
++        <div class="modal-content" role="dialog" aria-modal="true"
++             aria-labelledby="modalTitle">
++            <button class="modal-close" data-close-modal
++                    aria-label="Close project details">×</button>
++            <p class="eyebrow" id="modalCategory">PROJECT DETAILS</p>
++            <h2 id="modalTitle">Project Title</h2>
++            <p id="modalDescription"></p>
++            <h3>Skills Used</h3>
++            <div class="project-tags" id="modalTags"></div>
++            <button class="primary-button" data-close-modal>Close</button>
++        </div>
++    </div>
++
++    <script src="script.js"></script>
+ </body>
+ </html>
+diff --git a/emmet-laboratory/profile.jpg b/emmet-laboratory/profile.jpg
+new file mode 100644
+index 0000000..631852e
+Binary files /dev/null and b/emmet-laboratory/profile.jpg differ
+diff --git a/emmet-laboratory/script.js b/emmet-laboratory/script.js
+new file mode 100644
+index 0000000..6c7f473
+--- /dev/null
++++ b/emmet-laboratory/script.js
+@@ -0,0 +1,158 @@
++
++const menuToggle = document.getElementById("menuToggle");
++const navLinks = document.getElementById("navLinks");
++
++// MOBILE NAVIGATION
++if (menuToggle && navLinks) {
++    menuToggle.addEventListener("click", function () {
++        const isOpen = navLinks.classList.toggle("open");
++
++        menuToggle.setAttribute("aria-expanded", String(isOpen));
++    });
++
++    navLinks.querySelectorAll("a").forEach(function (link) {
++        link.addEventListener("click", function () {
++            navLinks.classList.remove("open");
++            menuToggle.setAttribute("aria-expanded", "false");
++        });
++    });
++}
++
++// PROJECT INFORMATION
++const projects = {
++    farm: {
++        category: "E-COMMERCE WEBSITE",
++        title: "Agricultural E-Commerce",
++        description:
++            "An online platform for browsing agricultural products. " +
++            "The project focuses on presenting products clearly and " +
++            "providing a convenient shopping experience.",
++        tags: ["E-Commerce", "HTML", "CSS", "UI/UX Design"]
++    },
++
++    uc: {
++        category: "STUDENT SYSTEM",
++        title: "UC Reporting System",
++        description:
++            "A university reporting system designed to help students " +
++            "submit school concerns in an organized and convenient way. " +
++            "It focuses on reporting workflows and clear interface design.",
++        tags: ["System Design", "Forms", "Database", "User Experience"]
++    },
++
++    design: {
++        category: "WEB DESIGN",
++        title: "Website UI/UX & Routing",
++        description:
++            "Website interface concepts and navigation structures " +
++            "designed to make websites visually appealing and easy to use. " +
++            "The project focuses on layout, navigation, and user flow.",
++        tags: ["UI/UX", "Navigation", "Prototyping", "Web Design"]
++    }
++};
++
++// PROJECT DETAILS MODAL
++const modal = document.getElementById("projectModal");
++const modalCategory = document.getElementById("modalCategory");
++const modalTitle = document.getElementById("modalTitle");
++const modalDescription = document.getElementById("modalDescription");
++const modalTags = document.getElementById("modalTags");
++
++document.querySelectorAll("[data-project]").forEach(function (button) {
++    button.addEventListener("click", function () {
++        const project = projects[button.dataset.project];
++
++        if (!project || !modal) {
++            return;
++        }
++
++        modalCategory.textContent = project.category;
++        modalTitle.textContent = project.title;
++        modalDescription.textContent = project.description;
++
++        modalTags.replaceChildren();
++
++        project.tags.forEach(function (tag) {
++            const tagElement = document.createElement("span");
++            tagElement.textContent = tag;
++            modalTags.appendChild(tagElement);
++        });
++
++        modal.classList.add("open");
++        modal.setAttribute("aria-hidden", "false");
++
++        document.body.style.overflow = "hidden";
++    });
++});
++
++// CLOSE PROJECT MODAL
++function closeProjectModal() {
++    if (!modal) {
++        return;
++    }
++
++    modal.classList.remove("open");
++    modal.setAttribute("aria-hidden", "true");
++    document.body.style.overflow = "";
++}
++
++document.querySelectorAll("[data-close-modal]").forEach(function (button) {
++    button.addEventListener("click", closeProjectModal);
++});
++
++document.addEventListener("keydown", function (event) {
++    if (event.key === "Escape") {
++        closeProjectModal();
++    }
++});
++
++// HIGHLIGHT ACTIVE NAVIGATION LINK
++const sections = document.querySelectorAll("header[id], main section[id]");
++const sectionLinks = document.querySelectorAll(".nav-links a");
++
++if ("IntersectionObserver" in window) {
++    const observer = new IntersectionObserver(
++        function (entries) {
++            entries.forEach(function (entry) {
++                if (!entry.isIntersecting) {
++                    return;
++                }
++
++                sectionLinks.forEach(function (link) {
++                    const active =
++                        link.getAttribute("href") === "#" + entry.target.id;
++
++                    link.classList.toggle("active", active);
++                });
++            });
++        },
++        {
++            rootMargin: "-25% 0px -65% 0px"
++        }
++    );
++
++    sections.forEach(function (section) {
++        observer.observe(section);
++    });
++}
++
++// CONTACT FORM DEMONSTRATION
++const contactForm = document.getElementById("contactForm");
++const formMessage = document.getElementById("formMessage");
++
++if (contactForm && formMessage) {
++    contactForm.addEventListener("submit", function (event) {
++        event.preventDefault();
++
++        if (!contactForm.checkValidity()) {
++            contactForm.reportValidity();
++            return;
++        }
++
++        formMessage.textContent =
++            "Thank you for your message! This is a demo form; " +
++            "your message has not been sent.";
++
++        contactForm.reset();
++    });
++}
+diff --git a/emmet-laboratory/style.css b/emmet-laboratory/style.css
+new file mode 100644
+index 0000000..15197a5
+--- /dev/null
++++ b/emmet-laboratory/style.css
+@@ -0,0 +1,969 @@
++
++@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
++
++:root {
++    --pink: #e879a9;
++    --dark-pink: #c84d85;
++    --light-pink: #fff0f6;
++    --soft-pink: #ffe0ec;
++    --lavender: #f1e9ff;
++    --white: #ffffff;
++    --text: #513849;
++    --muted: #886d7d;
++    --border: #f5d6e5;
++    --shadow: 0 12px 35px rgba(200, 77, 133, 0.12);
++}
++
++* {
++    margin: 0;
++    padding: 0;
++    box-sizing: border-box;
++    scroll-behavior: smooth;
++}
++
++body {
++    font-family: 'DM Sans', sans-serif;
++    background: linear-gradient(135deg, #fff5f8, #f9f1ff, #fff0f6);
++    background-attachment: fixed;
++    color: var(--text);
++    line-height: 1.7;
++}
++
++a {
++    color: inherit;
++    text-decoration: none;
++}
++
++button,
++input,
++textarea {
++    font: inherit;
++}
++
++button {
++    cursor: pointer;
++}
++
++/* NAVIGATION */
++
++.top-nav {
++    position: sticky;
++    top: 0;
++    z-index: 50;
++    display: flex;
++    align-items: center;
++    justify-content: space-between;
++    gap: 20px;
++    padding: 14px max(4%, calc((100% - 1100px) / 2));
++    background: rgba(255, 255, 255, 0.92);
++    backdrop-filter: blur(15px);
++    border-bottom: 1px solid var(--border);
++    box-shadow: 0 4px 20px rgba(200, 77, 133, 0.06);
++}
++
++.brand {
++    color: var(--text);
++    font-size: 1.2rem;
++    font-weight: 700;
++}
++
++.brand span {
++    color: var(--dark-pink);
++}
++
++.nav-links {
++    display: flex;
++    align-items: center;
++    gap: 8px;
++}
++
++.nav-links a {
++    padding: 8px 14px;
++    border-radius: 30px;
++    color: var(--muted);
++    font-size: 0.85rem;
++    font-weight: 700;
++    transition: 0.3s ease;
++}
++
++.nav-links a:hover,
++.nav-links a.active {
++    color: var(--dark-pink);
++    background: var(--light-pink);
++}
++
++.menu-toggle {
++    display: none;
++    border: 1px solid var(--border);
++    border-radius: 10px;
++    padding: 6px 12px;
++    background: var(--light-pink);
++    color: var(--dark-pink);
++    font-size: 1.3rem;
++}
++
++/* HERO */
++
++.hero {
++    position: relative;
++    display: grid;
++    grid-template-columns: 1.1fr 0.9fr;
++    align-items: center;
++    gap: 50px;
++    width: min(1100px, 90%);
++    min-height: 540px;
++    margin: auto;
++    padding: 70px 0;
++}
++
++.eyebrow {
++    color: var(--dark-pink);
++    font-size: 0.75rem;
++    font-weight: 700;
++    letter-spacing: 2px;
++}
++
++.hero h1 {
++    margin: 15px 0 8px;
++    font-family: 'Playfair Display', serif;
++    font-size: clamp(2.8rem, 6vw, 4.5rem);
++    line-height: 1.2;
++    color: var(--text);
++}
++
++.hero h1 span {
++    color: var(--dark-pink);
++}
++
++.hero h2 {
++    margin-bottom: 18px;
++    font-size: 1.15rem;
++    font-weight: 600;
++}
++
++.hero-description {
++    max-width: 530px;
++    color: var(--muted);
++    font-size: 0.95rem;
++}
++
++.hero-buttons {
++    display: flex;
++    flex-wrap: wrap;
++    gap: 12px;
++    margin-top: 26px;
++}
++
++.primary-button,
++.secondary-button {
++    display: inline-flex;
++    align-items: center;
++    justify-content: center;
++    padding: 12px 22px;
++    border: 1px solid var(--dark-pink);
++    border-radius: 30px;
++    font-size: 0.85rem;
++    font-weight: 700;
++    transition: 0.3s ease;
++}
++
++.primary-button {
++    background: var(--dark-pink);
++    color: var(--white);
++}
++
++.primary-button:hover {
++    background: #a9366b;
++    border-color: #a9366b;
++    transform: translateY(-3px);
++    box-shadow: 0 8px 20px rgba(200, 77, 133, 0.2);
++}
++
++.secondary-button {
++    background: var(--white);
++    color: var(--dark-pink);
++}
++
++.secondary-button:hover {
++    background: var(--light-pink);
++    transform: translateY(-3px);
++}
++
++/* HERO DECORATION */
++
++.hero-art {
++    position: relative;
++    display: grid;
++    place-items: center;
++    min-height: 340px;
++}
++
++.art-circle {
++    position: absolute;
++    border-radius: 50%;
++}
++
++.circle-one {
++    width: 270px;
++    height: 270px;
++    background: linear-gradient(135deg, #ffd9e8, #e8d9ff);
++}
++
++.circle-two {
++    right: 5%;
++    bottom: 5%;
++    width: 100px;
++    height: 100px;
++    border: 2px solid #efbdd5;
++}
++
++.art-card {
++    position: relative;
++    z-index: 1;
++    width: min(300px, 90%);
++    padding: 20px;
++    border: 1px solid #ffffff;
++    border-radius: 24px;
++    background: rgba(255, 255, 255, 0.9);
++    box-shadow: 0 20px 50px rgba(200, 77, 133, 0.16);
++    transform: rotate(-3deg);
++}
++
++.art-dots {
++    display: flex;
++    gap: 6px;
++    padding-bottom: 16px;
++    border-bottom: 1px solid var(--border);
++}
++
++.art-dots span {
++    width: 9px;
++    height: 9px;
++    border-radius: 50%;
++    background: #f3a4c7;
++}
++
++.art-dots span:nth-child(2) {
++    background: #d9b8f4;
++}
++
++.art-dots span:nth-child(3) {
++    background: #e879a9;
++}
++
++.art-initials {
++    display: grid;
++    place-items: center;
++    width: 100px;
++    height: 100px;
++    margin: 25px auto 15px;
++    border: 5px solid #ffe0ec;
++    border-radius: 50%;
++    background: linear-gradient(135deg, #f9b9d4, #e2ccff);
++    color: var(--dark-pink);
++    font-family: 'Playfair Display', serif;
++    font-size: 3.5rem;
++    font-weight: 700;
++}
++
++.art-card p {
++    text-align: center;
++    color: var(--muted);
++    font-size: 0.62rem;
++    font-weight: 700;
++    letter-spacing: 1px;
++}
++
++.art-line {
++    height: 8px;
++    margin-top: 14px;
++    border-radius: 10px;
++    background: var(--soft-pink);
++}
++
++.art-line.short {
++    width: 65%;
++    margin-top: 8px;
++    background: var(--lavender);
++}
++
++.floating-note {
++    position: absolute;
++    right: 0;
++    bottom: 30px;
++    z-index: 2;
++    padding: 10px 16px;
++    border: 1px solid var(--border);
++    border-radius: 14px;
++    background: var(--white);
++    color: var(--dark-pink);
++    box-shadow: var(--shadow);
++    font-size: 0.8rem;
++    font-weight: 700;
++    transform: rotate(3deg);
++}
++
++/* GENERAL SECTIONS */
++
++.section {
++    width: min(1100px, 90%);
++    margin: 30px auto;
++    padding: 55px;
++    border: 1px solid var(--border);
++    border-radius: 28px;
++    background: rgba(255, 255, 255, 0.9);
++    box-shadow: var(--shadow);
++    scroll-margin-top: 90px;
++}
++
++.section-heading {
++    margin-bottom: 28px;
++    text-align: center;
++}
++
++.section-heading h2 {
++    margin: 5px 0 8px;
++    color: var(--dark-pink);
++    font-family: 'Playfair Display', serif;
++    font-size: clamp(2rem, 4vw, 2.8rem);
++}
++
++.section-intro {
++    color: var(--muted);
++    font-size: 0.9rem;
++}
++
++/* ABOUT */
++
++.about-content {
++    display: grid;
++    grid-template-columns: 150px 1fr;
++    align-items: start;
++    gap: 30px;
++    max-width: 850px;
++    margin: auto;
++}
++
++.about-mark {
++    display: grid;
++    place-items: center;
++    width: 140px;
++    height: 140px;
++    border: 7px solid #ffe0ec;
++    border-radius: 50%;
++    background: linear-gradient(135deg, #ffd9e8, #e8d9ff);
++    color: var(--dark-pink);
++    font-family: 'Playfair Display', serif;
++    font-size: 4rem;
++    font-weight: 700;
++}
++
++.about-text h3 {
++    margin-bottom: 12px;
++    font-size: 1.15rem;
++}
++
++.about-text p {
++    margin-bottom: 12px;
++    color: var(--muted);
++    font-size: 0.92rem;
++}
++
++/* SKILLS */
++
++.skills-grid {
++    display: grid;
++    grid-template-columns: repeat(3, minmax(0, 1fr));
++    gap: 18px;
++}
++
++.skill-card {
++    padding: 25px;
++    border: 1px solid var(--border);
++    border-radius: 20px;
++    background: linear-gradient(145deg, #fff1f7, #f5efff);
++    transition: 0.3s ease;
++}
++
++.skill-card:hover {
++    transform: translateY(-5px);
++    border-color: var(--pink);
++    box-shadow: 0 12px 25px rgba(200, 77, 133, 0.1);
++}
++
++.skill-icon {
++    display: grid;
++    place-items: center;
++    width: 42px;
++    height: 42px;
++    margin-bottom: 16px;
++    border-radius: 13px;
++    background: var(--white);
++    color: var(--dark-pink);
++    font-weight: 700;
++}
++
++.skill-card h3 {
++    margin-bottom: 8px;
++    color: var(--dark-pink);
++    font-size: 1rem;
++}
++
++.skill-card p {
++    color: var(--muted);
++    font-size: 0.85rem;
++}
++
++/* PROJECTS */
++
++.projects-grid {
++    display: grid;
++    grid-template-columns: repeat(3, minmax(0, 1fr));
++    gap: 20px;
++}
++
++.project-card {
++    overflow: hidden;
++    border: 1px solid var(--border);
++    border-radius: 22px;
++    background: var(--white);
++    transition: 0.3s ease;
++}
++
++.project-card:hover {
++    transform: translateY(-6px);
++    box-shadow: 0 15px 30px rgba(200, 77, 133, 0.14);
++    border-color: var(--pink);
++}
++
++.project-art {
++    position: relative;
++    display: grid;
++    place-items: center;
++    min-height: 190px;
++    padding: 25px 15px;
++}
++
++.farm-art {
++    background: linear-gradient(135deg, #ffe9d5, #fff4e9);
++}
++
++.uc-art {
++    background: linear-gradient(135deg, #e6e5ff, #f5eaff);
++}
++
++.design-art {
++    background: linear-gradient(135deg, #ffddec, #f4e6ff);
++}
++
++.project-number {
++    position: absolute;
++    top: 12px;
++    left: 12px;
++    padding: 5px 9px;
++    border-radius: 20px;
++    background: rgba(255, 255, 255, 0.8);
++    color: var(--dark-pink);
++    font-size: 0.62rem;
++    font-weight: 700;
++    letter-spacing: 0.5px;
++}
++
++.farm-illustration {
++    width: 85%;
++    padding: 20px;
++    border: 1px solid #ffffff;
++    border-radius: 14px;
++    background: rgba(255, 255, 255, 0.8);
++    text-align: center;
++}
++
++.farm-title {
++    display: block;
++    color: #b96c43;
++    font-family: 'Playfair Display', serif;
++    font-size: 1.5rem;
++    font-weight: 700;
++}
++
++.farm-subtitle {
++    color: #8e776a;
++    font-size: 0.7rem;
++}
++
++.farm-boxes {
++    display: flex;
++    justify-content: center;
++    gap: 6px;
++    margin-top: 15px;
++}
++
++.farm-boxes span {
++    padding: 5px 7px;
++    border-radius: 6px;
++    background: #f5e4d6;
++    color: #875b45;
++    font-size: 0.58rem;
++}
++
++.report-illustration {
++    display: flex;
++    width: 85%;
++    min-height: 120px;
++    overflow: hidden;
++    border: 5px solid #ffffff;
++    border-radius: 12px;
++    background: #ffffff;
++    box-shadow: 0 8px 20px #8870bb1a;
++}
++
++.report-sidebar {
++    width: 24%;
++    background: #c7b8ec;
++}
++
++.report-content {
++    flex: 1;
++    padding: 12px;
++}
++
++.report-heading {
++    display: block;
++    color: #65528d;
++    font-size: 0.7rem;
++    font-weight: 700;
++}
++
++.report-stat-row {
++    display: flex;
++    gap: 6px;
++    margin: 10px 0;
++}
++
++.report-stat-row i {
++    flex: 1;
++    height: 20px;
++    border-radius: 5px;
++    background: #eee8fa;
++}
++
++.report-line {
++    height: 7px;
++    margin-top: 7px;
++    border-radius: 5px;
++    background: #eee8fa;
++}
++
++.report-line.short {
++    width: 65%;
++}
++
++.website-illustration {
++    width: 85%;
++    min-height: 120px;
++    padding: 12px;
++    border: 5px solid #ffffff;
++    border-radius: 12px;
++    background: #ffffff;
++    box-shadow: 0 8px 20px #c84d851a;
++}
++
++.website-top {
++    height: 9px;
++    margin-bottom: 9px;
++    border-radius: 5px;
++    background: #f8d5e6;
++}
++
++.website-banner {
++    height: 37px;
++    border-radius: 6px;
++    background: linear-gradient(90deg, #f7c4dd, #e3d3ff);
++}
++
++.website-columns {
++    display: flex;
++    gap: 7px;
++    margin-top: 9px;
++}
++
++.website-columns i {
++    flex: 1;
++    height: 23px;
++    border-radius: 5px;
++    background: #f5e8f4;
++}
++
++.website-footer {
++    width: 60%;
++    height: 6px;
++    margin-top: 8px;
++    border-radius: 5px;
++    background: #e7d9f4;
++}
++
++.project-info {
++    padding: 22px;
++}
++
++.project-category {
++    color: var(--dark-pink);
++    font-size: 0.65rem;
++    font-weight: 700;
++    letter-spacing: 1px;
++}
++
++.project-info h3 {
++    margin: 7px 0 10px;
++    font-size: 1.08rem;
++}
++
++.project-info > p:not(.project-category) {
++    min-height: 100px;
++    color: var(--muted);
++    font-size: 0.84rem;
++}
++
++.project-tags {
++    display: flex;
++    flex-wrap: wrap;
++    gap: 7px;
++    margin: 15px 0;
++}
++
++.project-tags span {
++    padding: 5px 9px;
++    border: 1px solid var(--border);
++    border-radius: 20px;
++    background: var(--light-pink);
++    color: var(--dark-pink);
++    font-size: 0.65rem;
++}
++
++.project-button {
++    display: inline-block;
++    padding: 10px 18px;
++    border: none;
++    border-radius: 30px;
++    background: var(--dark-pink);
++    color: var(--white);
++    font-size: 0.8rem;
++    font-weight: 700;
++    transition: 0.3s ease;
++}
++
++.project-button:hover {
++    background: #a9366b;
++    transform: translateY(-2px);
++}
++
++/* CONTACT */
++
++.contact-section form {
++    max-width: 720px;
++    margin: auto;
++}
++
++.form-row {
++    display: grid;
++    grid-template-columns: 1fr 1fr;
++    gap: 18px;
++}
++
++.form-field {
++    margin-bottom: 17px;
++}
++
++.form-field label {
++    display: block;
++    margin-bottom: 6px;
++    font-size: 0.85rem;
++    font-weight: 700;
++}
++
++.form-field input,
++.form-field textarea {
++    width: 100%;
++    padding: 12px 14px;
++    border: 1px solid #eacbd9;
++    border-radius: 12px;
++    outline: none;
++    background: #fffafd;
++    color: var(--text);
++    transition: 0.3s ease;
++}
++
++.form-field input:focus,
++.form-field textarea:focus {
++    border-color: var(--pink);
++    box-shadow: 0 0 0 4px rgba(232, 121, 169, 0.13);
++}
++
++.form-field textarea {
++    resize: vertical;
++}
++
++#formMessage {
++    margin-top: 12px;
++    color: var(--dark-pink);
++    font-size: 0.85rem;
++    font-weight: 700;
++}
++
++/* FOOTER */
++
++.footer {
++    padding: 30px 15px;
++    text-align: center;
++    background: #f9dce9;
++    color: #89536e;
++}
++
++.footer p {
++    margin-top: 6px;
++    font-size: 0.85rem;
++}
++
++.footer .copyright {
++    margin-top: 15px;
++    font-size: 0.75rem;
++}
++
++/* PROJECT DETAILS MODAL */
++
++.modal {
++    position: fixed;
++    inset: 0;
++    z-index: 100;
++    display: none;
++    align-items: center;
++    justify-content: center;
++    padding: 20px;
++}
++
++.modal.open {
++    display: flex;
++}
++
++.modal-backdrop {
++    position: absolute;
++    inset: 0;
++    background: rgba(65, 35, 53, 0.45);
++    backdrop-filter: blur(4px);
++}
++
++.modal-content {
++    position: relative;
++    z-index: 1;
++    width: min(500px, 100%);
++    padding: 35px;
++    border: 1px solid var(--border);
++    border-radius: 25px;
++    background: var(--white);
++    box-shadow: 0 20px 60px rgba(100, 45, 75, 0.2);
++}
++
++.modal-content h2 {
++    margin: 8px 0 15px;
++    color: var(--dark-pink);
++    font-family: 'Playfair Display', serif;
++}
++
++.modal-content > p:not(.eyebrow) {
++    color: var(--muted);
++    font-size: 0.9rem;
++}
++
++.modal-content h3 {
++    margin-top: 20px;
++    font-size: 0.95rem;
++}
++
++.modal-close {
++    position: absolute;
++    top: 10px;
++    right: 16px;
++    border: none;
++    background: transparent;
++    color: var(--dark-pink);
++    font-size: 1.8rem;
++}
++
++/* RESPONSIVE DESIGN */
++
++@media (max-width: 900px) {
++    .hero {
++        gap: 25px;
++    }
++
++    .section {
++        padding: 40px 30px;
++    }
++
++    .skills-grid {
++        grid-template-columns: repeat(2, minmax(0, 1fr));
++    }
++
++    .projects-grid {
++        grid-template-columns: repeat(2, minmax(0, 1fr));
++    }
++}
++
++@media (max-width: 620px) {
++    .top-nav {
++        flex-wrap: wrap;
++        padding: 12px 5%;
++    }
++
++    .menu-toggle {
++        display: block;
++    }
++
++    .nav-links {
++        display: none;
++        width: 100%;
++        flex-direction: column;
++        align-items: stretch;
++        padding-top: 10px;
++    }
++
++    .nav-links.open {
++        display: flex;
++    }
++
++    .nav-links a {
++        padding: 10px 12px;
++    }
++
++    .hero {
++        grid-template-columns: 1fr;
++        padding: 55px 0 35px;
++    }
++
++    .hero h1 {
++        font-size: 3rem;
++    }
++
++    .hero-art {
++        min-height: 310px;
++    }
++
++    .section {
++        width: 92%;
++        margin: 20px auto;
++        padding: 30px 22px;
++        border-radius: 22px;
++    }
++
++    .about-content {
++        grid-template-columns: 1fr;
++        justify-items: center;
++        text-align: center;
++    }
++
++    .skills-grid,
++    .projects-grid,
++    .form-row {
++        grid-template-columns: 1fr;
++    }
++
++    .project-info > p:not(.project-category) {
++        min-height: auto;
++    }
++
++    .modal-content {
++        padding: 28px 22px;
++    }
++}
++
++@media (prefers-reduced-motion: reduce) {
++    *,
++    *::before,
++    *::after {
++        scroll-behavior: auto !important;
++        transition: none !important;
++    }
++}
++
++/* SOCIAL CONTACT LINKS */
++
++.social-links {
++    display: grid;
++    grid-template-columns: repeat(2, minmax(0, 1fr));
++    gap: 20px;
++    max-width: 750px;
++    margin: 35px auto 10px;
++}
++
++.social-card {
++    display: flex;
++    align-items: center;
++    gap: 15px;
++    padding: 22px;
++    border: 1px solid var(--border);
++    border-radius: 20px;
++    background: linear-gradient(135deg, #fff1f7, #f5efff);
++    transition: 0.3s ease;
++}
++
++.social-card:hover {
++    transform: translateY(-5px);
++    border-color: var(--pink);
++    box-shadow: var(--shadow);
++}
++
++.social-icon {
++    display: grid;
++    flex-shrink: 0;
++    place-items: center;
++    width: 50px;
++    height: 50px;
++    border-radius: 15px;
++    background: white;
++    color: var(--dark-pink);
++}
++
++.social-icon svg {
++    width: 27px;
++    height: 27px;
++}
++
++.social-card h3 {
++    color: var(--dark-pink);
++    font-size: 1rem;
++}
++
++.social-card p {
++    color: var(--muted);
++    font-size: 0.8rem;
++}
++
++.social-arrow {
++    margin-left: auto;
++    color: var(--dark-pink);
++    font-size: 1.3rem;
++}
++
++@media (max-width: 560px) {
++    .social-links {
++        grid-template-columns: 1fr;
++    }
++}
++
++.profile-circle {
++    width: 140px;
++    height: 140px;
++    border-radius: 50%;
++    overflow: hidden;
++    border: 6px solid #f8c8df;
++    background: #f0d5f7;
++    margin: 0 auto;
++}
++
++.profile-circle img {
++    width: 100%;
++    height: 100%;
++    object-fit: cover;
++    object-position: center;
++    display: block;
++}
+
+commit 42828a66a1d393323c72649f2032a48b2ea93840
+Author:     FiarrahMae <fiamaeulat22@gmail.com>
+AuthorDate: 2026-10-12 06:57:11 +0000
+Commit:     FiarrahMae <fiamaeulat22@gmail.com>
+CommitDate: 2026-10-12 06:57:11 +0000
+
+    di pa tapos
+
+diff --git a/emmet-laboratory/01-basic.html b/emmet-laboratory/01-basic.html
+index a382a53..0a6d6a5 100644
+--- a/emmet-laboratory/01-basic.html
++++ b/emmet-laboratory/01-basic.html
+@@ -34,6 +34,8 @@
+         <p>This is the main content.</p>
+     </main>
+ 
+-    <footer></footer>
++    <footer>
++        <p>&copy; 2026 - Fiarrah Mae P. Ulat</p>
++    </footer>
+ </body>
+ </html>
+diff --git a/emmet-laboratory/02-classes-ids.html b/emmet-laboratory/02-classes-ids.html
+index cd9478a..b6bb44e 100644
+--- a/emmet-laboratory/02-classes-ids.html
++++ b/emmet-laboratory/02-classes-ids.html
+@@ -178,7 +178,7 @@
+     </main>
+ 
+     <footer>
+-        <p>&copy; 2026 Emmet Laboratory</p>
++        <p>&copy; 2026 - Fiarrah Mae P. Ulat</p>
+     </footer>
+ 
+ </body>
+diff --git a/emmet-laboratory/03-navigation.html b/emmet-laboratory/03-navigation.html
+index ad2f9c5..e528045 100644
+--- a/emmet-laboratory/03-navigation.html
++++ b/emmet-laboratory/03-navigation.html
+@@ -100,7 +100,7 @@
+     </main>
+ 
+     <footer>
+-        <p>&copy; 2026 - My Website</p>
++        <p>&copy; 2026 - Fiarrah Mae P. Ulat</p>
+     </footer>
+ 
+ </body>
+diff --git a/emmet-laboratory/04-form.html b/emmet-laboratory/04-form.html
+index d68807e..9f578e1 100644
+--- a/emmet-laboratory/04-form.html
++++ b/emmet-laboratory/04-form.html
+@@ -70,5 +70,9 @@
+ 
+         <input type="submit" value="Register">
+     </form>
++
++    <footer>
++        <p>&copy; 2026 - Fiarrah Mae P. Ulat</p>
++    </footer>
+ </body>
+ </html>
+diff --git a/emmet-laboratory/05-semantic.html b/emmet-laboratory/05-semantic.html
+index 61f116d..76cf425 100644
+--- a/emmet-laboratory/05-semantic.html
++++ b/emmet-laboratory/05-semantic.html
+@@ -60,7 +60,7 @@
+     </main>
+ 
+     <footer>
+-        <p>Copyright 2026 - My Website</p>
++        <p>&copy; 2026 - Fiarrah Mae P. Ulat</p>
+     </footer>
+ </body>
+ </html>
+diff --git a/emmet-laboratory/index.html b/emmet-laboratory/index.html
+index 2f98e6a..47c8f61 100644
+--- a/emmet-laboratory/index.html
++++ b/emmet-laboratory/index.html
+@@ -17,5 +17,9 @@
+ 
+     <h1>Emmet Laboratory</h1>
+     <p>Learning HTML using Emmet in Visual Studio Code.</p>
++
++    <footer>
++        <p>&copy; 2026 - Fiarrah Mae P. Ulat</p>
++    </footer>
+ </body>
+ </html>
+\ No newline at end of file
+diff --git a/emmet-laboratory/portfolio.html b/emmet-laboratory/portfolio.html
+index b70352b..c1b33ab 100644
+--- a/emmet-laboratory/portfolio.html
++++ b/emmet-laboratory/portfolio.html
+@@ -104,7 +104,7 @@
+     </main>
+ 
+     <footer>
+-        <p>&copy; 2026 - Your Name</p>
++        <p>&copy; 2026 - Fiarrah Mae P. Ulat</p>
+     </footer>
+ </body>
+ </html>
+
+commit d846da260fb0bec62a11c7a67792a3aeb0bcec3b
+Author:     FiarrahMae <fiamaeulat22@gmail.com>
+AuthorDate: 2026-10-12 01:58:04 +0000
+Commit:     FiarrahMae <fiamaeulat22@gmail.com>
+CommitDate: 2026-10-12 01:58:04 +0000
+
+    yung css pa
+
+diff --git a/emmet-laboratory/01-basic.html b/emmet-laboratory/01-basic.html
+new file mode 100644
+index 0000000..a382a53
+--- /dev/null
++++ b/emmet-laboratory/01-basic.html
+@@ -0,0 +1,39 @@
++
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Basic HTML Elements</title>
++</head>
++<body>
++    <nav>
++        <a href="01-basic.html">Part 1</a> |
++        <a href="02-classes-ids.html">Part 2</a> |
++        <a href="03-navigation.html">Part 3</a> |
++        <a href="04-form.html">Part 4</a> |
++        <a href="05-semantic.html">Part 5</a> |
++        <a href="portfolio.html">Portfolio</a>
++    </nav>
++
++    <header></header>
++    <nav></nav>
++
++    <h1>Basic HTML Elements</h1>
++    <h2>Introduction</h2>
++    <h2>Learning HTML</h2>
++
++    <p>This is the first paragraph.</p>
++    <p>This is the second paragraph.</p>
++    <p>This is the third paragraph.</p>
++
++    <div>This is a division container.</div>
++    <span>This is an inline container.</span>
++
++    <main>
++        <p>This is the main content.</p>
++    </main>
++
++    <footer></footer>
++</body>
++</html>
+diff --git a/emmet-laboratory/02-classes-ids.html b/emmet-laboratory/02-classes-ids.html
+new file mode 100644
+index 0000000..cd9478a
+--- /dev/null
++++ b/emmet-laboratory/02-classes-ids.html
+@@ -0,0 +1,185 @@
++
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Emmet Laboratory - Parts 2 to 8</title>
++</head>
++<body>
++    <nav>
++        <a href="01-basic.html">Part 1</a> |
++        <a href="02-classes-ids.html">Part 2</a> |
++        <a href="03-navigation.html">Part 3</a> |
++        <a href="04-form.html">Part 4</a> |
++        <a href="05-semantic.html">Part 5</a> |
++        <a href="portfolio.html">Portfolio</a>
++    </nav>
++
++    <header>
++        <h1>Emmet Laboratory</h1>
++        <h2>Basic HTML Elements</h2>
++        <h2>Learning Web Development</h2>
++    </header>
++
++    <nav>
++        <ul>
++            <li><a href="#home">Home</a></li>
++            <li><a href="#about">About</a></li>
++            <li><a href="#services">Services</a></li>
++            <li><a href="#projects">Projects</a></li>
++            <li><a href="#contact">Contact</a></li>
++        </ul>
++    </nav>
++
++    <main>
++        <section id="home">
++            <h2>Introduction</h2>
++            <p>This is the first paragraph.</p>
++            <p>This is the second paragraph.</p>
++            <p>This is the third paragraph.</p>
++
++            <div>This is a division container.</div>
++            <span>This is an inline container.</span>
++        </section>
++
++        
++        <header class="site-header">
++            <h2>Classes and IDs</h2>
++        </header>
++
++        <nav id="main-nav">
++            <p>Navigation with an ID.</p>
++        </nav>
++
++        <main class="content">
++            <section id="about">
++                <p class="introduction">This paragraph has an introduction class.</p>
++
++                <div id="container">This division has an ID.</div>
++
++                <div class="card featured">This division has two classes.</div>
++
++                <section id="about" class="content-section">
++                    <h2>About Me</h2>
++                    <p>This section uses an ID and a class.</p>
++                </section>
++            </section>
++        </main>
++
++        <footer class="site-footer">
++            <p>This is the page footer.</p>
++        </footer>
++
++        
++        <section id="operators">
++            <h2>Child Operator Example</h2>
++            <nav>
++                <ul>
++                    <li>Navigation Item 1</li>
++                    <li>Navigation Item 2</li>
++                    <li>Navigation Item 3</li>
++                    <li>Navigation Item 4</li>
++                    <li>Navigation Item 5</li>
++                </ul>
++            </nav>
++
++            <h2>Sibling Operator Example</h2>
++            <h3>First Heading</h3>
++            <h4>Second Heading</h4>
++            <p>First paragraph.</p>
++            <p>Second paragraph.</p>
++
++            <h2>Multiplication Operator Example</h2>
++                <div>Division 1</div>
++                <div>Division 2</div>
++                <div>Division 3</div>
++
++            <p>Paragraph 1</p>
++            <p>Paragraph 2</p>
++            <p>Paragraph 3</p>
++            <p>Paragraph 4</p>
++            <p>Paragraph 5</p>
++        </section>
++
++        
++        <section>
++            <h2>My Web Development Journey</h2>
++            <p>I am learning HTML, CSS, JavaScript, and web development.</p>
++        </section>
++
++        
++        <section id="numbering">
++            <h2>Numbered Items</h2>
++            <ul>
++                <li class="item1">Item 1</li>
++                <li class="item2">Item 2</li>
++                <li class="item3">Item 3</li>
++                <li class="item4">Item 4</li>
++                <li class="item5">Item 5</li>
++            </ul>
++
++            <h2>Numbered Menu</h2>
++            <ul>
++                <li>Menu 1</li>
++                <li>Menu 2</li>
++                <li>Menu 3</li>
++                <li>Menu 4</li>
++                <li>Menu 5</li>
++            </ul>
++        </section>
++
++        
++        <section>
++            <h2>Website Navigation</h2>
++            <nav>
++                <ul>
++                    <li><a href="#home">Home</a></li>
++                    <li><a href="#about">About</a></li>
++                    <li><a href="#portfolio">Portfolio</a></li>
++                    <li><a href="#services">Services</a></li>
++                    <li><a href="#contact">Contact</a></li>
++                </ul>
++            </nav>
++        </section>
++
++        
++        <section id="attributes">
++            <h2>HTML Attributes</h2>
++
++            <label for="name">Name:</label>
++            <input type="text" id="name" placeholder="Enter your name">
++            <br><br>
++
++            <label for="email">Email:</label>
++            <input type="email" id="email" placeholder="Enter your email">
++            <br><br>
++
++            <img src="images/profile.jpg" alt="Profile Photo" width="150">
++            <br><br>
++
++            <a href="https://www.google.com">Google</a>
++        </section>
++
++        <section id="portfolio">
++            <h2>Portfolio</h2>
++            <p>This section demonstrates a website section.</p>
++        </section>
++
++        <section id="services">
++            <h2>Services</h2>
++            <p>This section contains service information.</p>
++        </section>
++
++        <section id="contact">
++            <h2>Contact</h2>
++            <p>Contact me for more information.</p>
++        </section>
++    </main>
++
++    <footer>
++        <p>&copy; 2026 Emmet Laboratory</p>
++    </footer>
++
++</body>
++</html>
+diff --git a/emmet-laboratory/03-navigation.html b/emmet-laboratory/03-navigation.html
+new file mode 100644
+index 0000000..ad2f9c5
+--- /dev/null
++++ b/emmet-laboratory/03-navigation.html
+@@ -0,0 +1,107 @@
++
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Navigation and HTML Attributes</title>
++</head>
++<body>
++    <nav>
++        <a href="01-basic.html">Part 1</a> |
++        <a href="02-classes-ids.html">Part 2</a> |
++        <a href="03-navigation.html">Part 3</a> |
++        <a href="04-form.html">Part 4</a> |
++        <a href="05-semantic.html">Part 5</a> |
++        <a href="portfolio.html">Portfolio</a>
++    </nav>
++
++    <header>
++        <h1>My Website Navigation</h1>
++    </header>
++
++
++    <section>
++        <h2>Numbered Items</h2>
++
++        <ul>
++            <li class="item1">Item 1</li>
++            <li class="item2">Item 2</li>
++            <li class="item3">Item 3</li>
++            <li class="item4">Item 4</li>
++            <li class="item5">Item 5</li>
++        </ul>
++
++        <h2>Numbered Menu</h2>
++
++        <ul>
++            <li>Menu 1</li>
++            <li>Menu 2</li>
++            <li>Menu 3</li>
++            <li>Menu 4</li>
++            <li>Menu 5</li>
++        </ul>
++    </section>
++
++    
++    <nav>
++        <ul>
++            <li><a href="#home">Home</a></li>
++            <li><a href="#about">About</a></li>
++            <li><a href="#portfolio">Portfolio</a></li>
++            <li><a href="#services">Services</a></li>
++            <li><a href="#contact">Contact</a></li>
++        </ul>
++    </nav>
++
++    <main>
++        <section id="home">
++            <h2>Home</h2>
++            <p>Welcome to my website.</p>
++        </section>
++
++        <section id="about">
++            <h2>About</h2>
++            <p>Learn more about me.</p>
++        </section>
++
++        <section id="portfolio">
++            <h2>Portfolio</h2>
++            <p>Here are my projects.</p>
++        </section>
++
++        <section id="services">
++            <h2>Services</h2>
++            <p>Explore the services I offer.</p>
++        </section>
++
++        <section id="contact">
++            <h2>Contact</h2>
++            <p>Get in touch with me.</p>
++        </section>
++
++        
++        <section>
++            <h2>HTML Attributes</h2>
++
++            <label for="name">Name:</label>
++            <input type="text" id="name" placeholder="Enter your name">
++            <br><br>
++
++            <label for="email">Email:</label>
++            <input type="email" id="email" placeholder="Enter your email">
++            <br><br>
++
++            <img src="images/profile.jpg" alt="Profile Photo" width="150">
++            <br><br>
++
++            <a href="https://www.google.com">Google</a>
++        </section>
++    </main>
++
++    <footer>
++        <p>&copy; 2026 - My Website</p>
++    </footer>
++
++</body>
++</html>
+diff --git a/emmet-laboratory/04-form.html b/emmet-laboratory/04-form.html
+new file mode 100644
+index 0000000..d68807e
+--- /dev/null
++++ b/emmet-laboratory/04-form.html
+@@ -0,0 +1,74 @@
++
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Student Registration Form</title>
++</head>
++<body>
++    <nav>
++        <a href="01-basic.html">Part 1</a> |
++        <a href="02-classes-ids.html">Part 2</a> |
++        <a href="03-navigation.html">Part 3</a> |
++        <a href="04-form.html">Part 4</a> |
++        <a href="05-semantic.html">Part 5</a> |
++        <a href="portfolio.html">Portfolio</a>
++    </nav>
++
++    <h1>Student Registration Form</h1>
++
++    <form action="#" method="post">
++        <label for="student-id">Student ID:</label>
++        <input type="text" id="student-id" name="student-id" required>
++        <br><br>
++
++        <label for="fullname">Full Name:</label>
++        <input type="text" id="fullname" name="fullname" required>
++        <br><br>
++
++        <label for="email">Email:</label>
++        <input type="email" id="email" name="email" required>
++        <br><br>
++
++        <label for="password">Password:</label>
++        <input type="password" id="password" name="password" required>
++        <br><br>
++
++        <p>Gender:</p>
++        <input type="radio" id="male" name="gender" value="Male">
++        <label for="male">Male</label>
++
++        <input type="radio" id="female" name="gender" value="Female">
++        <label for="female">Female</label>
++        <br><br>
++
++        <label for="course">Course:</label>
++        <select id="course" name="course">
++            <option value="">Select Course</option>
++            <option value="BSIT">BSIT Information Technology</option>
++            <option value="BSCS">BSCS Computer Science</option>
++            <option value="BSIS">BSDA Data Analytics</option>
++            <option value="BSIS">BMMA Multimedia Arts</option>
++        </select>
++        <br><br>
++
++        <p>Hobbies:</p>
++        <input type="checkbox" id="reading" name="hobbies" value="Reading">
++        <label for="reading">Reading</label>
++
++        <input type="checkbox" id="gaming" name="hobbies" value="Gaming">
++        <label for="gaming">Gaming</label>
++
++        <input type="checkbox" id="sports" name="hobbies" value="Sports">
++        <label for="sports">Sports</label>
++        <br><br>
++
++        <label for="address">Address:</label>
++        <textarea id="address" name="address" rows="4" cols="30"></textarea>
++        <br><br>
++
++        <input type="submit" value="Register">
++    </form>
++</body>
++</html>
+diff --git a/emmet-laboratory/05-semantic.html b/emmet-laboratory/05-semantic.html
+new file mode 100644
+index 0000000..61f116d
+--- /dev/null
++++ b/emmet-laboratory/05-semantic.html
+@@ -0,0 +1,66 @@
++
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Semantic HTML</title>
++</head>
++<body>
++    <nav>
++        <a href="01-basic.html">Part 1</a> |
++        <a href="02-classes-ids.html">Part 2</a> |
++        <a href="03-navigation.html">Part 3</a> |
++        <a href="04-form.html">Part 4</a> |
++        <a href="05-semantic.html">Part 5</a> |
++        <a href="portfolio.html">Portfolio</a>
++    </nav>
++
++    <header>
++        <h1>My Semantic Website</h1>
++    </header>
++
++    <nav>
++        <ul>
++            <li><a href="#home">Home</a></li>
++            <li><a href="#about">About</a></li>
++            <li><a href="#services">Services</a></li>
++            <li><a href="#contact">Contact</a></li>
++        </ul>
++    </nav>
++
++    <main>
++        <section id="home">
++            <h2>Welcome</h2>
++            <article>
++                <h3>Introduction</h3>
++                <p>This website demonstrates semantic HTML elements.</p>
++            </article>
++        </section>
++
++        <section id="about">
++            <h2>About Us</h2>
++            <p>Semantic elements make webpage content easier to understand.</p>
++        </section>
++
++        <aside>
++            <h3>Related Information</h3>
++            <p>Learn more about HTML and web development.</p>
++        </aside>
++
++        <section id="services">
++            <h2>Services</h2>
++            <p>We create simple web pages using HTML.</p>
++        </section>
++
++        <section id="contact">
++            <h2>Contact</h2>
++            <p>Email: student@example.com</p>
++        </section>
++    </main>
++
++    <footer>
++        <p>Copyright 2026 - My Website</p>
++    </footer>
++</body>
++</html>
+diff --git a/emmet-laboratory/index.html b/emmet-laboratory/index.html
+new file mode 100644
+index 0000000..2f98e6a
+--- /dev/null
++++ b/emmet-laboratory/index.html
+@@ -0,0 +1,21 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Emmet Laboratory</title>
++</head>
++<body>
++    <nav>
++        <a href="01-basic.html">Part 1</a> |
++        <a href="02-classes-ids.html">Part 2</a> |
++        <a href="03-navigation.html">Part 3</a> |
++        <a href="04-form.html">Part 4</a> |
++        <a href="05-semantic.html">Part 5</a> |
++        <a href="portfolio.html">Portfolio</a>
++    </nav>
++
++    <h1>Emmet Laboratory</h1>
++    <p>Learning HTML using Emmet in Visual Studio Code.</p>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/emmet-laboratory/portfolio.html b/emmet-laboratory/portfolio.html
+new file mode 100644
+index 0000000..b70352b
+--- /dev/null
++++ b/emmet-laboratory/portfolio.html
+@@ -0,0 +1,110 @@
++
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>My Student Portfolio</title>
++</head>
++<body>
++    <nav>
++        <a href="01-basic.html">Part 1</a> |
++        <a href="02-classes-ids.html">Part 2</a> |
++        <a href="03-navigation.html">Part 3</a> |
++        <a href="04-form.html">Part 4</a> |
++        <a href="05-semantic.html">Part 5</a> |
++        <a href="portfolio.html">Portfolio</a>
++    </nav>
++
++    <header>
++        <h1>My Portfolio</h1>
++        <h2>Student Name</h2>
++        <p>A student learning web development and programming.</p>
++
++        <nav>
++            <ul>
++                <li><a href="#home">Home</a></li>
++                <li><a href="#about">About</a></li>
++                <li><a href="#skills">Skills</a></li>
++                <li><a href="#projects">Projects</a></li>
++                <li><a href="#contact">Contact</a></li>
++            </ul>
++        </nav>
++    </header>
++
++    <main>
++        <section id="home">
++            <h2>Welcome to My Portfolio</h2>
++            <p>This page showcases my skills and projects.</p>
++        </section>
++
++        <section id="about">
++            <h2>About Me</h2>
++            <img src="images/profile.jpg" alt="My Profile Photo" width="150">
++            <p>I am a student interested in technology, programming, and website development.</p>
++        </section>
++
++        <section id="skills">
++            <h2>My Skills</h2>
++            <ul>
++                <li>HTML</li>
++                <li>CSS</li>
++                <li>JavaScript</li>
++                <li>PHP</li>
++                <li>MySQL</li>
++                <li>Git</li>
++            </ul>
++        </section>
++
++        <section id="projects">
++            <h2>My Projects</h2>
++
++            <div class="project-card">
++                <h3>Project 1: Personal Website</h3>
++                <p>A basic website created using HTML.</p>
++                <a href="#projects">View Project</a>
++            </div>
++
++            <div class="project-card">
++                <h3>Project 2: Student Registration</h3>
++                <p>A form for collecting student information.</p>
++                <a href="#projects">View Project</a>
++            </div>
++
++            <div class="project-card">
++                <h3>Project 3: Navigation Page</h3>
++                <p>A webpage demonstrating navigation links and semantic elements.</p>
++                <a href="#projects">View Project</a>
++            </div>
++        </section>
++
++        <section id="contact">
++            <h2>Contact Me</h2>
++
++            <form action="#" method="post">
++                <label for="name">Name:</label>
++                <input type="text" id="name" name="name" required>
++                <br><br>
++
++                <label for="contact-email">Email:</label>
++                <input type="email" id="contact-email" name="email" required>
++                <br><br>
++
++                <label for="subject">Subject:</label>
++                <input type="text" id="subject" name="subject" required>
++                <br><br>
++
++                <label for="message">Message:</label>
++                <textarea id="message" name="message" rows="5" cols="30" required></textarea>
++                <br><br>
++
++                <input type="submit" value="Send Message">
++            </form>
++        </section>
++    </main>
++
++    <footer>
++        <p>&copy; 2026 - Your Name</p>
++    </footer>
++</body>
++</html>
+
+commit 5178859469f9d23606d7a36b1c55246d33e9762c
+Author:     FiarrahMae <fiamaeulat22@gmail.com>
+AuthorDate: 2026-09-30 01:24:36 +0000
+Commit:     FiarrahMae <fiamaeulat22@gmail.com>
+CommitDate: 2026-09-30 01:24:36 +0000
+
+    di pa rin
+
+diff --git a/HTML-LAB/images.html b/HTML-LAB/images.html
+index 5d86ffa..ac161c7 100644
+--- a/HTML-LAB/images.html
++++ b/HTML-LAB/images.html
+@@ -10,7 +10,12 @@
+              width:500px;
+              height:600px;
+              border:5px solid black;
++             display: block;
++             margin-left: auto;
++             margin-right: auto;
++             width: 25%;
+         }
++        
+ </style>
+ <body>
+     <nav>
+@@ -23,7 +28,8 @@
+         <a href="schedule.html">TABLE</a> |
+         <a href="registration.html">REGISTRATION</a>
+     </nav>
+-
++    <br><br>
++    
+     <a href="https://www.pinterest.com/ideas/cute-cat/955681590912/"target="_blank">
+         <img src="CuteCat.jpg" alt="CuteCat">
+     </a>
+
+commit d8e6bc8d193418708462f5a895df3e3a10854bfb
+Author:     FiarrahMae <fiamaeulat22@gmail.com>
+AuthorDate: 2026-09-28 02:01:58 +0000
+Commit:     FiarrahMae <fiamaeulat22@gmail.com>
+CommitDate: 2026-09-28 02:01:58 +0000
+
+    di pa rin tapos
+
+diff --git a/HTML-LAB/registration.html b/HTML-LAB/registration.html
+index c2e7cd5..e348648 100644
+--- a/HTML-LAB/registration.html
++++ b/HTML-LAB/registration.html
+@@ -16,7 +16,7 @@
+         <a href="schedule.html">TABLE</a> |
+         <a href="registration.html">REGISTRATION</a> 
+     </nav>
+-
++    <br><br>
+         <form action="/action_page.php"></form>
+ 
+         <label for="fname">Fullname:</label><br>
+@@ -58,7 +58,7 @@
+             required>
+         <br><br>
+ 
+-        <label for="bdaymonth">Birthday (dd/mm/yyyy):</label>
++        <label for="bdaymonth">Birthday:</label>
+         <input 
+         type="date"
+         id="bdaymonth"
+@@ -73,6 +73,16 @@
+         <label for="female">Female</label>
+         <br><br>
+ 
++        <label for="program">Program:</label>
++
++        <select id="program" name="program" required>
++        <option value="">Select a program</option>
++        <option value="BSIT">Bachelor of Science in Information Technology</option>
++        <option value="BSCS">Bachelor of science in Computer Science</option>
++        </select>
++        <br><br>
++
++    
+ 
+         <input type="submit" value="Submit">
+ </body>
+
+commit 389e383021b7c493df4ed840bc14cd8defe87c48
+Author:     FiarrahMae <fiamaeulat22@gmail.com>
+AuthorDate: 2026-09-25 01:59:35 +0000
+Commit:     FiarrahMae <fiamaeulat22@gmail.com>
+CommitDate: 2026-09-25 01:59:35 +0000
+
+    di pa tapos
+
+diff --git a/HTML-LAB/registration.html b/HTML-LAB/registration.html
+index 228913f..c2e7cd5 100644
+--- a/HTML-LAB/registration.html
++++ b/HTML-LAB/registration.html
+@@ -20,14 +20,60 @@
+         <form action="/action_page.php"></form>
+ 
+         <label for="fname">Fullname:</label><br>
+-        <input type="text" id="fname" name="fname"><br>
++        <input 
++            type="text" 
++            id="fname" 
++            name="fname"
++            placeholder="Enter your full name"
++            minlength="2"
++            maxlength="50"
++            required>
++        <br><br>
+ 
+         <label for="StudId">Student ID:</label><br>
+-        <input type="text" id="StudId" name="StudId"><br><br>
++        <input 
++            type="text" 
++            id="StudId" 
++            name="StudId"
++            placeholder="Enter your Student ID"
++            required>
++        <br><br>
+ 
+         <label for="Email">Email:</label><br>
+-        <input type="text" id="Email" name="Email"><br><br>
++        <input 
++            type="text" 
++            id="Email" 
++            name="Email"
++            placeholder="example@gmail.com">
++        <br><br>
+ 
+-    <input type="submit" value="Submit">
++        <label for="pwd">Password:</label><br>
++        <input 
++            type="password" 
++            id="pwd"
++            name="pwd"
++            placeholder="Enter your Password"
++            minlength="8"
++            pattern="(?=.*\d)(?=.*[a-zA-Z]).{8,}"
++            required>
++        <br><br>
++
++        <label for="bdaymonth">Birthday (dd/mm/yyyy):</label>
++        <input 
++        type="date"
++        id="bdaymonth"
++        name="bdaymonth">
++        <br><br>
++
++        <p>Gender:</p>
++        <input type="radio" id="male" name="gender" value="male">
++        <label for="male">Male</label>
++        
++        <input type="radio" id="female" name="gender" value="female">
++        <label for="female">Female</label>
++        <br><br>
++
++
++        <input type="submit" value="Submit">
+ </body>
+ </html>
+\ No newline at end of file
+
+commit 4c02a0b6e3653b980980d43c8ab505b410ce9680
+Author:     FiarrahMae <fiamaeulat22@gmail.com>
+AuthorDate: 2026-09-23 02:00:53 +0000
+Commit:     FiarrahMae <fiamaeulat22@gmail.com>
+CommitDate: 2026-09-23 02:00:53 +0000
+
+    not yet done
+
+diff --git a/HTML-LAB/about.html b/HTML-LAB/about.html
+index ad99ac3..5464d5f 100644
+--- a/HTML-LAB/about.html
++++ b/HTML-LAB/about.html
+@@ -11,7 +11,9 @@
+         <a href="contact.html">CONTACT</a> |
+         <a href="lists.html">LISTS</a> |
+         <a href="links.html">LINKS</a> |
+-        <a href="images.html">IMAGE</a>
++        <a href="images.html">IMAGE</a> |
++        <a href="schedule.html">TABLE</a> |
++        <a href="registration.html">REGISTRATION</a>
+     </nav>
+ 
+     <h1>About Page</h1>
+diff --git a/HTML-LAB/contact.html b/HTML-LAB/contact.html
+index 22e2dea..07ca510 100644
+--- a/HTML-LAB/contact.html
++++ b/HTML-LAB/contact.html
+@@ -11,7 +11,9 @@
+         <a href="contact.html">CONTACT</a> |
+         <a href="lists.html">LISTS</a> |
+         <a href="links.html">LINKS</a> |
+-        <a href="images.html">IMAGE</a>
++        <a href="images.html">IMAGE</a> |
++        <a href="schedule.html">TABLE</a> |
++        <a href="registration.html">REGISTRATION</a>
+     </nav>
+ 
+     <h1>Contact Page</h1>
+diff --git a/HTML-LAB/formatting.html b/HTML-LAB/formatting.html
+index d3144e4..a98831c 100644
+--- a/HTML-LAB/formatting.html
++++ b/HTML-LAB/formatting.html
+@@ -12,7 +12,9 @@
+         <a href="contact.html">CONTACT</a> |
+         <a href="lists.html">LISTS</a> |
+         <a href="links.html">LINKS</a> |
+-        <a href="images.html">IMAGE</a>
++        <a href="images.html">IMAGE</a> |
++        <a href="schedule.html">TABLE</a> |
++        <a href="registration.html">REGISTRATION</a>
+     </nav>
+     
+     <p>
+diff --git a/HTML-LAB/images.html b/HTML-LAB/images.html
+index 8e441a0..5d86ffa 100644
+--- a/HTML-LAB/images.html
++++ b/HTML-LAB/images.html
+@@ -5,6 +5,13 @@
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>HTML IMAGES</title>
+ </head>
++<style>
++        img {
++             width:500px;
++             height:600px;
++             border:5px solid black;
++        }
++</style>
+ <body>
+     <nav>
+         <a href="index.html">HOME</a> |
+@@ -12,9 +19,13 @@
+         <a href="contact.html">CONTACT</a> |
+         <a href="lists.html">LISTS</a> |
+         <a href="links.html">LINKS</a> |
+-        <a href="images.html">IMAGE</a>
++        <a href="images.html">IMAGE</a> |
++        <a href="schedule.html">TABLE</a> |
++        <a href="registration.html">REGISTRATION</a>
+     </nav>
+ 
+-    <img src="https://www.istockphoto.com/photo/sacred-birma-cat-in-interior-gm623368750-109310563" alt="CuteCat" width="200" height="200">
++    <a href="https://www.pinterest.com/ideas/cute-cat/955681590912/"target="_blank">
++        <img src="CuteCat.jpg" alt="CuteCat">
++    </a>
+ </body>
+ </html>
+\ No newline at end of file
+diff --git a/HTML-LAB/index.html b/HTML-LAB/index.html
+index af5aa76..5c50586 100644
+--- a/HTML-LAB/index.html
++++ b/HTML-LAB/index.html
+@@ -13,7 +13,9 @@
+         <a href="contact.html">CONTACT</a> |
+         <a href="lists.html">LISTS</a> |
+         <a href="links.html">LINKS</a> |
+-        <a href="images.html">IMAGE</a>
++        <a href="images.html">IMAGE</a> |
++        <a href="schedule.html">TABLE</a> |
++        <a href="registration.html">REGISTRATION</a>
+     </nav>
+ 
+     <h1> MY PERSONAL PAGE </h1>
+diff --git a/HTML-LAB/links.html b/HTML-LAB/links.html
+index 2c9cdeb..38a2e5e 100644
+--- a/HTML-LAB/links.html
++++ b/HTML-LAB/links.html
+@@ -12,7 +12,9 @@
+         <a href="contact.html">CONTACT</a> |
+         <a href="lists.html">LISTS</a> |
+         <a href="links.html">LINKS</a> |
+-        <a href="images.html">IMAGE</a>
++        <a href="images.html">IMAGE</a> |
++        <a href="schedule.html">TABLE</a> |
++        <a href="registration.html">REGISTRATION</a>
+     </nav>
+ 
+     <h2>EXTERNAL LINKS</h2>
+diff --git a/HTML-LAB/lists.html b/HTML-LAB/lists.html
+index a36e64b..f5d75cb 100644
+--- a/HTML-LAB/lists.html
++++ b/HTML-LAB/lists.html
+@@ -13,7 +13,9 @@
+         <a href="contact.html">CONTACT</a> |
+         <a href="lists.html">LISTS</a> |
+         <a href="links.html">LINKS</a> |
+-        <a href="images.html">IMAGE</a>
++        <a href="images.html">IMAGE</a> |
++        <a href="schedule.html">TABLE</a> |
++        <a href="registration.html">REGISTRATION</a>
+     </nav>
+ 
+     <h2>UNORDERED LISTS OF FRUITS</h2>
+diff --git a/HTML-LAB/registration.html b/HTML-LAB/registration.html
+new file mode 100644
+index 0000000..228913f
+--- /dev/null
++++ b/HTML-LAB/registration.html
+@@ -0,0 +1,33 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>HTML REGISTRATION</title>
++</head>
++<body>
++    <nav>
++        <a href="index.html">HOME</a> |
++        <a href="about.html">ABOUT</a> |
++        <a href="contact.html">CONTACT</a> |
++        <a href="lists.html">LISTS</a> |
++        <a href="links.html">LINKS</a> |
++        <a href="images.html">IMAGE</a> |
++        <a href="schedule.html">TABLE</a> |
++        <a href="registration.html">REGISTRATION</a> 
++    </nav>
++
++        <form action="/action_page.php"></form>
++
++        <label for="fname">Fullname:</label><br>
++        <input type="text" id="fname" name="fname"><br>
++
++        <label for="StudId">Student ID:</label><br>
++        <input type="text" id="StudId" name="StudId"><br><br>
++
++        <label for="Email">Email:</label><br>
++        <input type="text" id="Email" name="Email"><br><br>
++
++    <input type="submit" value="Submit">
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/schedule.html b/HTML-LAB/schedule.html
+new file mode 100644
+index 0000000..7096a92
+--- /dev/null
++++ b/HTML-LAB/schedule.html
+@@ -0,0 +1,55 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>HTML SCHEDULE</title>
++</head>
++    <style>
++        table, th, td {
++             border:1px solid black;
++        }
++    </style>
++<body>
++        <nav>
++            <a href="index.html">HOME</a> |
++            <a href="about.html">ABOUT</a> |
++            <a href="contact.html">CONTACT</a> |
++            <a href="lists.html">LISTS</a> |
++            <a href="links.html">LINKS</a> |
++            <a href="images.html">IMAGE</a> |
++            <a href="schedule.html">TABLE</a> |
++            <a href="registration.html">REGISTRATION</a> 
++        </nav>
++
++    <table style="width:100%" border="1">
++        <tr>
++            <th colspan="6">CIT14 CLASS SCHEDULE</th>
++        </tr>
++        <tr>
++            <th>DAY</th>
++            <th>TIME</th>
++            <th>SUBJECT</th>
++            <th>ROOM</th>
++            <th>INSTRUCTOR</th>
++        </tr>
++
++        <tr>
++            <td>MONDAY</td>
++            <td rowspan="3">8:50-11:30</td>
++            <td rowspan="3">CIT14</td>
++            <td rowspan="3">M307</td>
++            <td rowspan="3">SIR LEONARD PRIM FRANCIS REYES</td>
++        </tr>
++
++        <tr>
++            <td>WEDNESDAY</td>
++        </tr>
++
++        <tr>
++            <td>FRIDAY</td>
++    </tr>
++</table>
++
++
++
+
+commit 0cfde7daef9769ed8e1f677f4a40f09395e3614c
+Author:     FiarrahMae <fiamaeulat22@gmail.com>
+AuthorDate: 2026-09-21 02:02:54 +0000
+Commit:     FiarrahMae <fiamaeulat22@gmail.com>
+CommitDate: 2026-09-23 00:57:30 +0000
+
+    To be Continued
+
+diff --git a/HTML-LAB/about.html b/HTML-LAB/about.html
+new file mode 100644
+index 0000000..ad99ac3
+--- /dev/null
++++ b/HTML-LAB/about.html
+@@ -0,0 +1,21 @@
++<!DOCTYPE html>
++<html>
++<head>
++    <title>About</title>
++</head>
++<body>
++
++    <nav>
++        <a href="index.html">HOME</a> |
++        <a href="about.html">ABOUT</a> |
++        <a href="contact.html">CONTACT</a> |
++        <a href="lists.html">LISTS</a> |
++        <a href="links.html">LINKS</a> |
++        <a href="images.html">IMAGE</a>
++    </nav>
++
++    <h1>About Page</h1>
++    <p>This page contains information about us.</p>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/contact.html b/HTML-LAB/contact.html
+new file mode 100644
+index 0000000..22e2dea
+--- /dev/null
++++ b/HTML-LAB/contact.html
+@@ -0,0 +1,21 @@
++<!DOCTYPE html>
++<html>
++<head>
++    <title>Contact</title>
++</head>
++<body>
++
++    <nav>
++        <a href="index.html">HOME</a> |
++        <a href="about.html">ABOUT</a> |
++        <a href="contact.html">CONTACT</a> |
++        <a href="lists.html">LISTS</a> |
++        <a href="links.html">LINKS</a> |
++        <a href="images.html">IMAGE</a>
++    </nav>
++
++    <h1>Contact Page</h1>
++    <p>You can contact us through this page.</p>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/formatting.html b/HTML-LAB/formatting.html
+index 8547c3c..d3144e4 100644
+--- a/HTML-LAB/formatting.html
++++ b/HTML-LAB/formatting.html
+@@ -6,6 +6,15 @@
+     <title>HTML FORMATTING</title>
+ </head>
+ <body>
++    <nav>
++        <a href="index.html">HOME</a> |
++        <a href="about.html">ABOUT</a> |
++        <a href="contact.html">CONTACT</a> |
++        <a href="lists.html">LISTS</a> |
++        <a href="links.html">LINKS</a> |
++        <a href="images.html">IMAGE</a>
++    </nav>
++    
+     <p>
+         <b>BOLD</b>
+         <em>it makes the text bold</em>
+@@ -65,7 +74,6 @@
+     <p>Create the following mathematical expression.</p>
+ 
+     <p>H<sub>2</sub>0</p>
+-
+     <p><strong>E</strong> = <em>mc</em><sup>2</sup></p>
+ </body>
+ </html>
+\ No newline at end of file
+diff --git a/HTML-LAB/images.html b/HTML-LAB/images.html
+new file mode 100644
+index 0000000..8e441a0
+--- /dev/null
++++ b/HTML-LAB/images.html
+@@ -0,0 +1,20 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>HTML IMAGES</title>
++</head>
++<body>
++    <nav>
++        <a href="index.html">HOME</a> |
++        <a href="about.html">ABOUT</a> |
++        <a href="contact.html">CONTACT</a> |
++        <a href="lists.html">LISTS</a> |
++        <a href="links.html">LINKS</a> |
++        <a href="images.html">IMAGE</a>
++    </nav>
++
++    <img src="https://www.istockphoto.com/photo/sacred-birma-cat-in-interior-gm623368750-109310563" alt="CuteCat" width="200" height="200">
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/index.html b/HTML-LAB/index.html
+index 352dd6c..af5aa76 100644
+--- a/HTML-LAB/index.html
++++ b/HTML-LAB/index.html
+@@ -7,6 +7,15 @@
+ </head>
+ <body>
+ 
++    <nav>
++        <a href="index.html">HOME</a> |
++        <a href="about.html">ABOUT</a> |
++        <a href="contact.html">CONTACT</a> |
++        <a href="lists.html">LISTS</a> |
++        <a href="links.html">LINKS</a> |
++        <a href="images.html">IMAGE</a>
++    </nav>
++
+     <h1> MY PERSONAL PAGE </h1>
+     <h2> 
+         Fiarrah Mae P. Ulat 
+diff --git a/HTML-LAB/links.html b/HTML-LAB/links.html
+new file mode 100644
+index 0000000..2c9cdeb
+--- /dev/null
++++ b/HTML-LAB/links.html
+@@ -0,0 +1,35 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>HTML LINKS</title>
++</head>
++<body>
++    <nav>
++        <a href="index.html">HOME</a> |
++        <a href="about.html">ABOUT</a> |
++        <a href="contact.html">CONTACT</a> |
++        <a href="lists.html">LISTS</a> |
++        <a href="links.html">LINKS</a> |
++        <a href="images.html">IMAGE</a>
++    </nav>
++
++    <h2>EXTERNAL LINKS</h2>
++        <ul>
++            <li><a href="https://www.google.com" target="_blank">Google</a></li>
++            <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
++            <li><a href="https://www.github.com" target="_blank">Github</a></li>
++            <li><a href="https://uc-bcf.edu.ph/" target="_blank">University of the Cordilleras</a></li>
++        </ul>
++
++    <h2>INTERNAL LINKS</h2>
++         <ul>
++            <li><a href="about.html">About Me</a></li>
++            <li><a href="contact.html">Contact</a></li>
++            <li><a href="home.html">Home</a></li>
++            <li><a href="lists.html">Lists</a></li>
++            <li><a href="links.html">Links</a></li>
++        </ul>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/lists.html b/HTML-LAB/lists.html
+index 1f5f8e1..a36e64b 100644
+--- a/HTML-LAB/lists.html
++++ b/HTML-LAB/lists.html
+@@ -6,6 +6,16 @@
+     <title>HTML LISTS</title>
+ </head>
+ <body>
++
++    <nav>
++        <a href="index.html">HOME</a> |
++        <a href="about.html">ABOUT</a> |
++        <a href="contact.html">CONTACT</a> |
++        <a href="lists.html">LISTS</a> |
++        <a href="links.html">LINKS</a> |
++        <a href="images.html">IMAGE</a>
++    </nav>
++
+     <h2>UNORDERED LISTS OF FRUITS</h2>
+         <ul>
+             <li>Melon</li>
+
+commit ed1c40a024d16dbecbf8e20b9a5606653ebb66ab
+Author:     FiarrahMae <fiamaeulat22@gmail.com>
+AuthorDate: 2026-09-21 09:46:31 +0800
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2026-09-21 09:46:31 +0800
+
+    Delete CuteCat.jpg
+
+diff --git a/CuteCat.jpg b/CuteCat.jpg
+deleted file mode 100644
+index b80c258..0000000
+Binary files a/CuteCat.jpg and /dev/null differ
+
+commit de289f426f4ff3dec834c5158c37be7ddad3313f
+Author:     FiarrahMae <fiamaeulat22@gmail.com>
+AuthorDate: 2026-09-21 09:45:45 +0800
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2026-09-21 09:45:45 +0800
+
+    Add files via upload
+
+diff --git a/HTML-LAB/CuteCat.jpg b/HTML-LAB/CuteCat.jpg
+new file mode 100644
+index 0000000..b80c258
+Binary files /dev/null and b/HTML-LAB/CuteCat.jpg differ
+
+commit ab89a04e3ae5dd23f24605615d44f526a1363338
+Author:     FiarrahMae <fiamaeulat22@gmail.com>
+AuthorDate: 2026-09-21 09:42:01 +0800
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2026-09-21 09:42:01 +0800
+
+    Add files via upload
+
+diff --git a/CuteCat.jpg b/CuteCat.jpg
+new file mode 100644
+index 0000000..b80c258
+Binary files /dev/null and b/CuteCat.jpg differ
+
+commit bd19d50a5533f587fd8edf3dbc3b142efd56605d
+Author:     FiarrahMae <fiamaeulat22@gmail.com>
+AuthorDate: 2026-09-18 01:32:37 +0000
+Commit:     FiarrahMae <fiamaeulat22@gmail.com>
+CommitDate: 2026-09-18 01:32:37 +0000
+
+    Initial Commit
+
+diff --git a/HTML-LAB/formatting.html b/HTML-LAB/formatting.html
+new file mode 100644
+index 0000000..8547c3c
+--- /dev/null
++++ b/HTML-LAB/formatting.html
+@@ -0,0 +1,71 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>HTML FORMATTING</title>
++</head>
++<body>
++    <p>
++        <b>BOLD</b>
++        <em>it makes the text bold</em>
++    </p>
++
++    <p>
++        <strong>IMPORTANT</strong>
++        <em>it can use in urgent or calling attention</em>
++    </p>
++
++    <p>
++        <i>ITALIC</i>
++        <em>it makes the text slant</em>
++    </p>
++
++    <p>
++        <em>EMPHASIZE</em>
++        <em>to emphasize/visible the text</em>
++    </p>
++
++    <p>
++        <u>UNDERLINE</u>
++        <em>the text has underline below </em>
++    </p>
++
++    <p>
++        <mark>HIGHLIGHTED</mark>
++        <em>to highlitght the text</em>
++    </p>
++
++    <p>
++        <small>SMALL</small>
++        <em>to make the text small size</em>
++    </p>
++
++    <p>
++        <del>DELETED</del>
++        <em>to delete text</em>
++    </p>
++
++    <p>
++        <ins>INSERT</ins>
++        <em>to insert text</em>
++    </p>
++
++    <p>
++        <sub>SUBCRIPT</sub>
++        <em>text appears half a character below the normal line</em>
++    </p>
++
++    <p>
++        <sup>SUPERSUBCRIPT</sup>
++        <em>text appears half a character above the normal line</em>
++    </p>
++
++    <h2>Challenge</h2>
++    <p>Create the following mathematical expression.</p>
++
++    <p>H<sub>2</sub>0</p>
++
++    <p><strong>E</strong> = <em>mc</em><sup>2</sup></p>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/index.html b/HTML-LAB/index.html
+new file mode 100644
+index 0000000..352dd6c
+--- /dev/null
++++ b/HTML-LAB/index.html
+@@ -0,0 +1,39 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>MY PERSONAL PAGE</title>
++</head>
++<body>
++
++    <h1> MY PERSONAL PAGE </h1>
++    <h2> 
++        Fiarrah Mae P. Ulat 
++    </h2>
++
++    <p> 
++        Bachelor of Science in Information Technology
++    </p>
++    <hr>
++
++    <h1>
++        ABOUT ME
++    </h1>
++
++    <p>
++        I am a student interested in web development. 
++        I enjoy creating websites with html, css and javascript. 
++        I also love creating UI/UX. 
++    </p>
++    <hr>
++
++    <h1>MY HOBBIES</h1>
++
++    <p>
++        My hobbies are singing, playing musical instruments and
++        playing volleyball.
++    </p>
++    <hr>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/HTML-LAB/lists.html b/HTML-LAB/lists.html
+new file mode 100644
+index 0000000..1f5f8e1
+--- /dev/null
++++ b/HTML-LAB/lists.html
+@@ -0,0 +1,40 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>HTML LISTS</title>
++</head>
++<body>
++    <h2>UNORDERED LISTS OF FRUITS</h2>
++        <ul>
++            <li>Melon</li>
++            <li>Banana</li>
++            <li>Watermelon</li>
++            <li>Apple</li>
++            <li>Grapes</li>
++        </ul>
++
++    <h2>ORDERED LISTS OF FRUITS</h2>
++        <ol>
++            <li>Melon</li>
++            <li>Banana</li>
++            <li>Watermelon</li>
++            <li>Apple</li>
++            <li>Grapes</li>
++        </ol>
++
++    <h2>NESTED LISTS OF FRUITS</h2>
++        <ul>
++            <li>Melon</li>
++            <li>Banana
++        <ul>
++            <li>Watermelon</li>
++            <li>Apple</li>
++        </ul>
++        </li>
++            <li>Grapes</li>
++        </ul>
++
++</body>
++</html>
+\ No newline at end of file
+
+commit 6a72049fe2f3afa84743459cb8401110451f2fe6
+Author:     M307 User <M307User@lab.uc-bcf.local>
+AuthorDate: 2026-09-07 09:59:19 +0800
+Commit:     M307 User <M307User@lab.uc-bcf.local>
+CommitDate: 2026-09-07 09:59:19 +0800
+
+    First Commit
+
+diff --git a/Synesthesia.md b/Synesthesia.md
+new file mode 100644
+index 0000000..582e1cf
+--- /dev/null
++++ b/Synesthesia.md
+@@ -0,0 +1,11 @@
++Synesthesia
++
++Save your smile
++Everything fades through time
++I'm lost for words
++Endlessly waiting for you
++Stay with me
++Yes, I know, this can't be
++As morning comes
++I'll say goodbye to you when I'm done
++Through the sun
+\ No newline at end of file

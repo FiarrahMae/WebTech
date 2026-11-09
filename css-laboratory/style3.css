@@ -1,0 +1,46 @@
+/* Color palette (4 colors)
+   Light gray-blue: #f4f7fa  (background)
+   Dark blue:       #0b3c6d  (main heading)
+   Dark green:      #1b5e20  (section headings)
+   Charcoal:        #333333  (body text)
+   Link color #145da0 is a lighter shade of the dark blue family. */
+
+body {
+  background-color: #f4f7fa;
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  color: #0b3c6d;
+  text-align: center;
+}
+
+h2 {
+  font-size: 22px;
+  color: #1b5e20;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+ul {
+  line-height: 1.8;
+  padding-left: 25px;
+}
+
+a {
+  color: #145da0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0b3c6d;
+}

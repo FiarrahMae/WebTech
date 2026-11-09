@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The CSS Box Model</title>
+  <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+  <header>
+    <h1>My First Blog</h1>
+    <p>
+      "Welcome to my first blog! This is where I share my thoughts,
+       experiences, and learnings about technology, web development, 
+       and the digital world. Explore the topics below to learn something new."
+    </p>
+  </header>
+
+  <div class="card-container">
+    <div class="card">
+      <h2>First Card - Introduction to HTML</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, corporis,
+        impedit sint velit temporibus fuga a sapiente adipisci, eaque aperiam
+        animi! Neque ipsam harum minus vero magnam itaque.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Second Card - Understanding CSS</h2>
+      <p>
+        CSS makes websites more attractive by adding colors, 
+        fonts, spacing, backgrounds, and layouts. It helps transform a 
+        simple HTML page into a well-designed website.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Third Card - Learning JavaScript</h2>
+      <p>
+        JavaScript adds interaction and functionality to websites.
+        It allows developers to create buttons, animations, interactive forms,
+        and other dynamic features.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
+
+<!--Reflection:
+Padding is the space inside an element, between its content and border.
+It takes on the element's background color. On the other hand, margin is
+the space outside an element, between its border and neighboring elements. 
+It is transparent and creates distance between elements. For example, in a 
+framed picture, padding is like the space between the photo and the frame,
+while margin is the gap between that frame and another picture.-->
+
+<!--The box-sizing: border-box property makes the width and height of an 
+element include its content, padding, and border. For example, if a card 
+has a width of 280px, padding of 20px, and a 1px border, its total width 
+remains exactly 280px. Without this property, the padding and border are 
+added to the specified width, making the total width 322px. This makes 
+element sizing more predictable and helps maintain an organized layout.-->
+
+<!--Excessive margin can create too much space between elements,
+making the webpage look unorganized and affecting its overall appearance. 
+It can also cause elements to move to the next line or create horizontal 
+scrolling when there is not enough space to fit them properly.-->
